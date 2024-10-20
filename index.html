@@ -2,686 +2,765 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- AOS Lib CDN  -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Fontawesome CDN  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Lib CDN  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <!-- Bootstrap CDN  -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Fontawesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Stylesheets   -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="hover.css">
-  <link rel="stylesheet" href="responsive.css">
-  <title>Home</title>
+    <!-- Bootstrap CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Stylesheets   -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Home</title>
 </head>
 
 <body>
 
-  <!-- Top Nav Start -->
-  <div class="tnav">
-    <div class="tcol1">
-      <a class="hvr-icon-buzz" href="tel:9123456789"><i class="fa-solid fa-phone hvr-icon"></i> +919876543210</a>
-      <a class="hvr-icon-buzz" href="https://maps.app.goo.gl/NYgzFJWTmGijf77d7" target="_blank"><i class="fa-solid fa-location-dot hvr-icon"></i> Rohtas Plumeria,
-        near New High Court, Gomti Nagar, Lucknow, 226010</a>
+    <!-- Top Nav Start -->
+    <div class="tnav">
+        <div class="tcol1">
+            <a class="hvr-icon-buzz" href="tel:9123456789"><i class="fa-solid fa-phone hvr-icon"></i> +919876543210</a>
+            <a class="hvr-icon-buzz" href="https://maps.app.goo.gl/NYgzFJWTmGijf77d7" target="_blank"><i
+                    class="fa-solid fa-location-dot hvr-icon"></i> Rohtas Plumeria,
+                near New High Court, Gomti Nagar, Lucknow, 226010</a>
+        </div>
+        <div class="tcol2">
+            <a class="hvr-icon-buzz" href="mailto:propertywalebabu@gmail.com"><i
+                    class="fa-solid fa-envelope hvr-icon"></i> propertywalebabu@gmail.com</a>
+        </div>
     </div>
-    <div class="tcol2">
-      <a class="hvr-icon-buzz" href="mailto:propertywalebabu@gmail.com"><i class="fa-solid fa-envelope hvr-icon"></i> propertywalebabu@gmail.com</a>
-    </div>
-  </div>
-  <!-- Top Nav End -->
+    <!-- Top Nav End -->
 
-  <!--  Nav Section Start     -->
-  <div class="nav">
-    <div class="ncol1">
-      <a href="" class="active-h">Home</a>
-      <a href="">About Us</a>
-      <div class="dropdown">
-        <a href="#" class="dropdown-toggle" onclick="event.preventDefault();" data-bs-toggle="dropdown" aria-expanded="false">
-          Services
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Property Management</a></li>
-          <li><a class="dropdown-item" href="#">Real Estate Brokerage</a></li>
-          <li><a class="dropdown-item" href="#">Real Estate Investment Consulting</a></li>
-        </ul>
-      </div>
-      <a href="">Projects</a>
-      <a href="">Blog</a>
-      <a href="">Clients</a>
-      <a href="">Testimonials</a>
-      <a href="">Contact Us</a>
-      <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#enquiryModal"
+    <!--  Nav Section Start     -->
+    <div class="nav">
+        <div class="ncol1">
+            <a href="" class="active-h">Home</a>
+            <a href="">About Us</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" onclick="event.preventDefault();" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Services
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Property Management</a></li>
+                    <li><a class="dropdown-item" href="#">Real Estate Brokerage</a></li>
+                    <li><a class="dropdown-item" href="#">Real Estate Investment Consulting</a></li>
+                </ul>
+            </div>
+            <a href="">Projects</a>
+            <a href="">Blog</a>
+            <a href="">Clients</a>
+            <a href="">Testimonials</a>
+            <a href="">Contact Us</a>
+            <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#enquiryModal"
         class="btn btn-color text-white">Inquiry</button> -->
-    </div>
-    <div class="ncol2">
-      <img src="images/logo.jpg" alt="" srcset="">
-    </div>
-  </div>
-  <!-- Nav Section  End-->
-
-<!-- Mobile Navigation Start -->
-<div class="mobile-nav">
-    <div class="mobile-header">
-      <img src="images/logo.jpg" alt="Logo" class="mobile-logo">
-      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="" class="active-h">Home</a>
-      <a href="">About Us</a>
-      <div class="dropdown">
-        <a href="#" class="dropdown-toggle" onclick="event.preventDefault();" data-bs-toggle="dropdown" aria-expanded="false">
-          Services
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Property Management</a></li>
-          <li><a class="dropdown-item" href="#">Real Estate Brokerage</a></li>
-          <li><a class="dropdown-item" href="#">Real Estate Investment Consulting</a></li>
-        </ul>
-      </div>
-      <a href="">Projects</a>
-      <a href="">Blog</a>
-      <a href="">Clients</a>
-      <a href="">Testimonials</a>
-      <a href="">Contact Us</a>
-    </div>
-  </div>
-  <!-- Mobile Navigation End -->
-
-  <!-- Carousel Section  Start-->
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/26908547_real_estate_facebook_banner_30.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/26908550_real_estate_facebook_banner_31.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/70787272_Real-Estate-Facebook-Cover-11.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- Carousel Section  Start-->
-
-  <!-- About Section  Start-->
-  <div class="about"  data-aos="fade-up">
-    <h5>who we are</h5>
-    <!-- <h2>We Provide Personalized Real Estate Solutions in Lucknow</h2> -->
-    <div class="about-row">
-      <div class="about-col1">
-        <h2 data-aos="fade-right">Property Wale Babu in Lucknow</h2>
-        <p data-aos="fade-right"> <strong>Welcome to Property Wale Babu! </strong> We are a leading real estate company dedicated to providing exceptional services in buying, selling, and renting properties. With a strong presence in the market and a team of experienced professionals, we aim to simplify the real estate process for our clients.</p>
-        <h4 data-aos="fade-right">Our Mission</h4>
-        <p data-aos="fade-right">At Property Wale Babu, our mission is to empower individuals and families to make informed real estate decisions. We believe that everyone deserves a place to call home, and we are committed to helping you find that perfect property.</p>
-        <h4 data-aos="fade-right">Services We Offer</h4>
-        <ul data-aos="fade-right">
-          <li>Residential Sales and Rentals</li>
-          <li>Commercial Real Estate</li>
-          <li>Property Management</li>
-          <li>Real Estate Consultancy</li>
-          <li>Legal Assistance</li>
-        </ul>
-      </div>
-      <div class="about-col2">
-        <img src="images/rb_2148653817.png" alt="" srcset="">
-      </div>
-    </div>  
-  </div>
-  <!-- About Section  End-->
-
-  <!-- Services Section  Start-->
-   <div class="services">
-    <h5  data-aos="fade-up">Our Services</h5>
-    <h3  data-aos="fade-up">Our Comprehensive Real Estate Services in Lucknow</h3>
-    <div class="card-container"  data-aos="fade-up">
-      <div class="card" >
-        <img class="card-img-top zoom" src="https://img.freepik.com/free-photo/mumbai-skyline-skyscrapers-construction_469504-21.jpg?t=st=1729359407~exp=1729363007~hmac=938f793f6f9f4108f79d93c7735b7622b0840a3bc542a7d8203f214e6bb406da&w=740" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Residential and Rentals</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-color text-white">Know More</a>
         </div>
-      </div>
-      <div class="card"  >
-        <img class="card-img-top zoom" src="https://img.freepik.com/premium-photo/contemporary-residential-buildings-with-balconies-gardens_979520-118091.jpg?w=740" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Commercial Real Estate</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-color text-white">Know More</a>
+        <div class="ncol2">
+            <img src="images/logo.jpg" alt="" srcset="">
         </div>
-      </div>
-      <div class="card"  >
-        <img class="card-img-top zoom" src="https://img.freepik.com/premium-photo/rendering-new-home_754951-4041.jpg?w=826" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Property Management</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-color text-white">Know More</a>
-        </div>
-      </div>
-      <div class="card"  >
-        <img class="card-img-top zoom" src="https://img.freepik.com/free-photo/keys-fountain-pen-house-paper-cut-out-calculator-architectural-blueprints_23-2148038690.jpg?t=st=1729359557~exp=1729363157~hmac=5859c083123a7acb4591c40c8f714517de8fdc56f2a73970d556f22435dedf09&w=740" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Real Estate Consultancy</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-color text-white">Know More</a>
-        </div>
-      </div>
     </div>
-   </div>
-  <!-- Services Section  End-->
+    <!-- Nav Section  End-->
 
-  <!-- Statistic Section  Start-->
-  <div class="container-fliud achievement-section">
-    <div class="achievement-content text-center">
-        <h2>Our Achievements</h2>
-        <div class="row pt-4"  data-aos="fade-up">
-            <div class="col-md-4">
-                <h3 id="clients">0</h3>
-                <p>Happy Clients</p>
+    <!-- Mobile Navigation Start -->
+    <div class="mobile-nav">
+        <div class="mobile-header">
+            <img src="images/logo.jpg" alt="Logo" class="mobile-logo">
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="" class="active-h">Home</a>
+            <a href="">About Us</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">Services</a>
+                <ul class="dropdown-menu" id="servicesDropdown">
+                    <li><a class="dropdown-item" href="#">Property Management</a></li>
+                    <li><a class="dropdown-item" href="#">Real Estate Brokerage</a></li>
+                    <li><a class="dropdown-item" href="#">Real Estate Investment Consulting</a></li>
+                </ul>
             </div>
-            <div class="col-md-4">
-                <h3 id="properties">0</h3>
-                <p>Properties Sold</p>
+            <a href="">Projects</a>
+            <a href="">Blog</a>
+            <a href="">Clients</a>
+            <a href="">Testimonials</a>
+            <a href="">Contact Us</a>
+        </div>
+    </div>
+    <!-- Mobile Navigation End -->
+
+
+    <!-- Carousel Section  Start-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/26908547_real_estate_facebook_banner_30.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="col-md-4">
-                <h3 id="experience">0</h3>
-                <p>Years of Experience</p>
+            <div class="carousel-item">
+                <img src="images/26908550_real_estate_facebook_banner_31.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/70787272_Real-Estate-Facebook-Cover-11.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Carousel Section  Start-->
+
+    <!-- About Section  Start-->
+    <div class="about" data-aos="fade-up">
+        <h5>who we are</h5>
+        <!-- <h2>We Provide Personalized Real Estate Solutions in Lucknow</h2> -->
+        <div class="about-row">
+            <div class="about-col1">
+                <h2 data-aos="fade-right">Property Wale Babu in Lucknow</h2>
+                <p data-aos="fade-right"> <strong>Welcome to Property Wale Babu! </strong> We are a leading real estate
+                    company dedicated to providing exceptional services in buying, selling, and renting properties. With
+                    a strong presence in the market and a team of experienced professionals, we aim to simplify the real
+                    estate process for our clients.</p>
+                <h4 data-aos="fade-right">Our Mission</h4>
+                <p data-aos="fade-right">At Property Wale Babu, our mission is to empower individuals and families to
+                    make informed real estate decisions. We believe that everyone deserves a place to call home, and we
+                    are committed to helping you find that perfect property.</p>
+                <h4 data-aos="fade-right">Services We Offer</h4>
+                <ul data-aos="fade-right">
+                    <li>Residential Sales and Rentals</li>
+                    <li>Commercial Real Estate</li>
+                    <li>Property Management</li>
+                    <li>Real Estate Consultancy</li>
+                    <li>Legal Assistance</li>
+                </ul>
+            </div>
+            <div class="about-col2">
+                <img src="images/rb_2148653817.png" alt="" srcset="">
             </div>
         </div>
     </div>
-</div>
-</div>
-  <!-- Statistic Section  End-->
+    <!-- About Section  End-->
 
- <!-- Project Section  Start-->
- <div class="container mt-5 pb-5 project">
-  <h5 class="p-title mb-4"  data-aos="fade-up">Our Featured Projects</h5>
-  <h3 class="text-center pb-2 fw-bold"  data-aos="fade-up">Real Estate Company in Lucknow</h3>
-  <p class="text-center pb-3"  data-aos="fade-up">Whether you’re looking for a contemporary home, a retail space, or an investment opportunity, our portfolio demonstrates our <br> capability to deliver results that exceed expectations. Join us in exploring the projects that highlight <br> our expertise and passion for transforming spaces into thriving environments.</p>
-
-  <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-              <div class="row">
-                  <div class="col-md-4">
-                      <a href="project1-link.html" class="card-link">
-                          <div class="card">
-                              <img src="https://teamamanchawla.com/wp-content/uploads/2024/03/Shalimar-Whispering-Woods-new-banner-525x328.jpg" class="card-img-top" alt="Project 1">
-                              <div class="card-body">
-                                  <h5 class="card-title text-truncate" style="max-width: 250px;">Purvanchal Royal Atlantis lorem</h5>
-                                  <p class="card-text text-truncate" style="max-height: 150px;">Welcome to Purvanchal Royal Atlantis, a premium residential project in Gomti Nagar Extension. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vel quos iusto aperiam perferendis amet corporis ipsa, quam itaque exercitationem ab, quod saepe, neque molestias minus qui culpa hic ipsum.</p>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-md-4">
-                      <a href="project2-link.html" class="card-link">
-                          <div class="card">
-                              <img src="https://teamamanchawla.com/wp-content/uploads/2024/03/sahu-city-pearl-banner-new2-525x328.jpg" class="card-img-top" alt="Project 2">
-                              <div class="card-body">
-                                  <h5 class="card-title text-truncate" style="max-width: 250px;">Shalimar One World 21</h5>
-                                  <p class="card-text text-truncate" style="max-height: 150px;">Shalimar Corp has created a residential project called Shalimar OneWorld 21 located in Gomti Nagar. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, illo nostrum ipsum quidem reprehenderit eveniet voluptatem impedit facilis illum, eligendi iusto fugiat, suscipit harum nulla obcaecati repellendus numquam sunt! Quo.</p>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-md-4">
-                      <a href="project3-link.html" class="card-link">
-                          <div class="card">
-                              <img src="https://teamamanchawla.com/wp-content/uploads/2023/05/oro-constella-new-525x328.jpg" class="card-img-top" alt="Project 3">
-                              <div class="card-body">
-                                  <h5 class="card-title text-truncate" style="max-width: 250px;">Shalimar Marbella</h5>
-                                  <p class="card-text text-truncate" style="max-height: 150px;">Welcome to Shalimar Marbella Lucknow, a luxury new project located in a prime area. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus et reiciendis exercitationem voluptatem impedit numquam voluptates, dicta nobis, suscipit doloribus consectetur nostrum enim? Qui in consectetur fugiat error a doloribus.</p>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <a class="btn btn-color mt-3 text-white" href="">All Projects</a>
-</div>
-
-<!-- Project Section  End-->
-
-<!-- Area Section  Start-->
- <div class="area">
-  <h5>Properties by Area</h5>
-  <h3>Best Properties in Lucknow</h3>
-  <p>Whether you are a homebuyer, investor, or business owner, we invite you to explore our offerings and experience <br> the difference that comes with partnering with a company that is shaping the future of real estate.</p>
-  <div class="prt-areas">
-    <div class="area-card area-card-1">
-        <div class="area-card-overlay">
-            <div class="area-card-content">
-                <h3>Faizabad Road</h3>
-                <p>5 Listings</p>
+    <!-- Services Section  Start-->
+    <div class="services">
+        <h5 data-aos="fade-up">Our Services</h5>
+        <h3 data-aos="fade-up">Our Comprehensive Real Estate Services in Lucknow</h3>
+        <div class="card-container" data-aos="fade-up">
+            <div class="card">
+                <img class="card-img-top zoom"
+                    src="https://img.freepik.com/free-photo/mumbai-skyline-skyscrapers-construction_469504-21.jpg?t=st=1729359407~exp=1729363007~hmac=938f793f6f9f4108f79d93c7735b7622b0840a3bc542a7d8203f214e6bb406da&w=740"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Residential and Rentals</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-color text-white">Know More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top zoom"
+                    src="https://img.freepik.com/premium-photo/contemporary-residential-buildings-with-balconies-gardens_979520-118091.jpg?w=740"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Commercial Real Estate</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-color text-white">Know More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top zoom"
+                    src="https://img.freepik.com/premium-photo/rendering-new-home_754951-4041.jpg?w=826"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Property Management</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-color text-white">Know More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top zoom"
+                    src="https://img.freepik.com/free-photo/keys-fountain-pen-house-paper-cut-out-calculator-architectural-blueprints_23-2148038690.jpg?t=st=1729359557~exp=1729363157~hmac=5859c083123a7acb4591c40c8f714517de8fdc56f2a73970d556f22435dedf09&w=740"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Real Estate Consultancy</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-color text-white">Know More</a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="area-card area-card-2">
-        <div class="area-card-overlay">
-            <div class="area-card-content">
-                <h3>Sultanpur Road</h3>
-                <p>5 Listings</p>
-            </div>
-        </div>
-    </div>
-    <div class="area-card area-card-3">
-        <div class="area-card-overlay">
-            <div class="area-card-content">
-                <h3>Raebareli Road</h3>
-                <p>5 Listings</p>
-            </div>
-        </div>
-    </div>
-    <div class="area-card area-card-4">
-        <div class="area-card-overlay">
-            <div class="area-card-content">
-                <h3>Gomti Nagar</h3>
-                <p>5 Listings</p>
-            </div>
-        </div>
-    </div>
-    <div class="area-card area-card-5">
-        <div class="area-card-overlay">
-            <div class="area-card-content">
-                <h3>Gomti Nagar Extension</h3>
-                <p>5 Listings</p>
-            </div>
-        </div>
-    </div>
-    <div class="area-card area-card-6">
-        <div class="area-card-overlay">
-            <div class="area-card-content">
-                <h3>Sushant Golf City</h3>
-                <p>5 Listings</p>
-            </div>
-        </div>
-    </div>
-</div>
- </div>
-<!-- Area Section  End-->
+    <!-- Services Section  End-->
 
-<!-- Client Section  Start-->
-<div class="clients">
-  <h5>Our Clients</h5>
-  <h3>Clients Who Trust Us</h3>
-  <div class="container"> 
-      <div id="clientSlider" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <div class="row">
-                      <!-- Card 1 -->
-                      <div class="col text-center">
-                          <div class="client-card">
-                              <img src="images/cd.jpeg" class="d-block w-100" alt="Client 1">
-                          </div>
-                      </div>
-                      <!-- Card 2 -->
-                      <div class="col text-center">
-                          <div class="client-card">
-                              <img src="images/cd.jpeg" class="d-block w-100" alt="Client 2">
-                          </div>
-                      </div>
-                      <!-- Card 3 -->
-                      <div class="col text-center">
-                          <div class="client-card">
-                              <img src="images/cd.jpeg" class="d-block w-100" alt="Client 3">
-                          </div>
-                      </div>
-                      <!-- Card 4 -->
-                      <div class="col text-center">
-                          <div class="client-card">
-                              <img src="images/cd.jpeg" class="d-block w-100" alt="Client 4">
-                          </div>
-                      </div>
-                      <!-- Card 5 -->
-                      <div class="col text-center">
-                          <div class="client-card">
-                              <img src="images/cd.jpeg" class="d-block w-100" alt="Client 5">
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                  <div class="row">
-                      <!-- Card 6 -->
-                      <div class="col text-center">
-                          <div class="client-card">
-                              <img src="images/cd.jpeg" class="d-block w-100" alt="Client 6">
-                          </div>
-                      </div>
-                      <!-- Card 7 -->
-                      <div class="col text-center">
-                          <div class="client-card">
-                              <img src="images/cd.jpeg" class="d-block w-100" alt="Client 7">
-                          </div>
-                      </div>
-                      <!-- Card 8 -->
-                      <div class="col text-center">
-                          <div class="client-card">
-                              <img src="images/cd.jpeg" class="d-block w-100" alt="Client 8">
-                          </div>
-                      </div>
-                      <!-- Card 9 -->
-                      <div class="col text-center">
-                          <div class="client-card">
-                              <img src="images/cd.jpeg" class="d-block w-100" alt="Client 9">
-                          </div>
-                      </div>
-                      <!-- Card 10 -->
-                      <div class="col text-center">
-                          <div class="client-card">
-                              <img src="images/cd.jpeg" class="d-block w-100" alt="Client 10">
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#clientSlider" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#clientSlider" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-          </button>
-      </div>
-  </div>
-</div>
-
-<!-- Client Section  End-->
-
-<!-- Why Choose us Section  Start-->
-
-<div class="wcs">
-  <div class="overlay">
-  <div class="flex-box" >
-    <div class="fbox1">
-      <img class="img1" src="https://img.freepik.com/free-photo/3d-rendering-hospital-building_23-2150896642.jpg?t=st=1729421057~exp=1729424657~hmac=7fc84371a7bf530b0e245aa48159c203b71327aac0c237a61c95d0df9d96139e&w=360" alt="" srcset="">
-      <img class="img2" src="https://img.freepik.com/premium-photo/contemporary-interior-studio-living-room-blue-colors-3d-rendering_1028938-268297.jpg?w=740" alt="" srcset="">
+    <!-- Statistic Section  Start-->
+    <div class="container-fliud achievement-section">
+        <div class="achievement-content text-center">
+            <h2>Our Achievements</h2>
+            <div class="row pt-4" data-aos="fade-up">
+                <div class="col-md-4">
+                    <h3 id="clients">0</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 id="properties">0</h3>
+                    <p>Properties Sold</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 id="experience">0</h3>
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="fbox2">
-      <div class="container">
-        <div class="accordion" id="accordionWhyChooseUs">
-          <h2>Why Choose Us</h2>
-          <p>We always ready to help by providing the best services for you. We  believe a good place to live can make your life better</p>
-            <!-- Accordion Item 1 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <i class="fas fa-chart-line me-2"></i> <!-- Icon for expertise -->
-                        Expertise in Real Estate Market
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionWhyChooseUs">
-                    <div class="accordion-body">
-                        With years of experience in the industry, we have a deep understanding of the real estate market, allowing us to provide valuable insights and advice.
+    </div>
+    <!-- Statistic Section  End-->
+
+    <!-- Project Section  Start-->
+    <div class="container mt-5 pb-5 project">
+        <h5 class="p-title mb-4" data-aos="fade-up">Our Featured Projects</h5>
+        <h3 class="text-center pb-2 fw-bold" data-aos="fade-up">Real Estate Company in Lucknow</h3>
+        <p class="text-center pb-3" data-aos="fade-up">Whether you’re looking for a contemporary home, a retail space,
+            or an investment opportunity, our portfolio demonstrates our <br> capability to deliver results that exceed
+            expectations. Join us in exploring the projects that highlight <br> our expertise and passion for
+            transforming spaces into thriving environments.</p>
+
+        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="project1-link.html" class="card-link">
+                                <div class="card">
+                                    <img src="https://teamamanchawla.com/wp-content/uploads/2024/03/Shalimar-Whispering-Woods-new-banner-525x328.jpg"
+                                        class="card-img-top" alt="Project 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-truncate" style="max-width: 250px;">Purvanchal Royal
+                                            Atlantis lorem</h5>
+                                        <p class="card-text text-truncate" style="max-height: 150px;">Welcome to
+                                            Purvanchal Royal Atlantis, a premium residential project in Gomti Nagar
+                                            Extension. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                                            vel quos iusto aperiam perferendis amet corporis ipsa, quam itaque
+                                            exercitationem ab, quod saepe, neque molestias minus qui culpa hic ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="project2-link.html" class="card-link">
+                                <div class="card">
+                                    <img src="https://teamamanchawla.com/wp-content/uploads/2024/03/sahu-city-pearl-banner-new2-525x328.jpg"
+                                        class="card-img-top" alt="Project 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-truncate" style="max-width: 250px;">Shalimar One
+                                            World 21</h5>
+                                        <p class="card-text text-truncate" style="max-height: 150px;">Shalimar Corp has
+                                            created a residential project called Shalimar OneWorld 21 located in Gomti
+                                            Nagar. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+                                            illo nostrum ipsum quidem reprehenderit eveniet voluptatem impedit facilis
+                                            illum, eligendi iusto fugiat, suscipit harum nulla obcaecati repellendus
+                                            numquam sunt! Quo.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="project3-link.html" class="card-link">
+                                <div class="card">
+                                    <img src="https://teamamanchawla.com/wp-content/uploads/2023/05/oro-constella-new-525x328.jpg"
+                                        class="card-img-top" alt="Project 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-truncate" style="max-width: 250px;">Shalimar Marbella
+                                        </h5>
+                                        <p class="card-text text-truncate" style="max-height: 150px;">Welcome to
+                                            Shalimar Marbella Lucknow, a luxury new project located in a prime area.
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus et
+                                            reiciendis exercitationem voluptatem impedit numquam voluptates, dicta
+                                            nobis, suscipit doloribus consectetur nostrum enim? Qui in consectetur
+                                            fugiat error a doloribus.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-    
-            <!-- Accordion Item 2 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <i class="fas fa-list me-2"></i> <!-- Icon for listings -->
-                        Comprehensive Property Listings
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionWhyChooseUs">
-                    <div class="accordion-body">
-                        We offer a wide range of properties to suit all your needs, whether you're looking for residential, commercial, or investment opportunities.
+        </div>
+        <a class="btn btn-color mt-3 text-white" href="">All Projects</a>
+    </div>
+
+    <!-- Project Section  End-->
+
+    <!-- Area Section  Start-->
+    <div class="area">
+        <h5>Properties by Area</h5>
+        <h3>Best Properties in Lucknow</h3>
+        <p>Whether you are a homebuyer, investor, or business owner, we invite you to explore our offerings and
+            experience <br> the difference that comes with partnering with a company that is shaping the future of real
+            estate.</p>
+        <div class="prt-areas">
+            <div class="area-card area-card-1">
+                <div class="area-card-overlay">
+                    <div class="area-card-content">
+                        <h3>Faizabad Road</h3>
+                        <p>5 Listings</p>
                     </div>
                 </div>
             </div>
-    
-            <!-- Accordion Item 3 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <i class="fas fa-headset me-2"></i> <!-- Icon for customer service -->
-                        Dedicated Customer Service
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionWhyChooseUs">
-                    <div class="accordion-body">
-                        Our team is committed to providing exceptional customer service, ensuring a smooth and stress-free experience from start to finish.
+            <div class="area-card area-card-2">
+                <div class="area-card-overlay">
+                    <div class="area-card-content">
+                        <h3>Sultanpur Road</h3>
+                        <p>5 Listings</p>
                     </div>
                 </div>
             </div>
-    
-            <!-- Accordion Item 4 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <i class="fas fa-thumbs-up me-2"></i> <!-- Icon for trust -->
-                        Trusted by Clients
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionWhyChooseUs">
-                    <div class="accordion-body">
-                        Our clients trust us for our transparency, integrity, and commitment to delivering top-notch real estate services.
+            <div class="area-card area-card-3">
+                <div class="area-card-overlay">
+                    <div class="area-card-content">
+                        <h3>Raebareli Road</h3>
+                        <p>5 Listings</p>
                     </div>
                 </div>
             </div>
-    
-            <!-- Accordion Item 5 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        <i class="fas fa-tags me-2"></i> <!-- Icon for pricing -->
-                        Competitive Pricing
-                    </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionWhyChooseUs">
-                    <div class="accordion-body">
-                        We offer competitive pricing structures that ensure you get the best value for your investment, whether you're buying or selling.
+            <div class="area-card area-card-4">
+                <div class="area-card-overlay">
+                    <div class="area-card-content">
+                        <h3>Gomti Nagar</h3>
+                        <p>5 Listings</p>
                     </div>
                 </div>
             </div>
-    
-            <!-- Accordion Item 6 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        <i class="fas fa-cogs me-2"></i> <!-- Icon for tailored solutions -->
-                        Tailored Solutions
-                    </button>
-                </h2>
-                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionWhyChooseUs">
-                    <div class="accordion-body">
-                        We understand that every client is unique, so we offer personalized real estate solutions that are tailored to meet your specific needs and goals.
+            <div class="area-card area-card-5">
+                <div class="area-card-overlay">
+                    <div class="area-card-content">
+                        <h3>Gomti Nagar Extension</h3>
+                        <p>5 Listings</p>
                     </div>
                 </div>
             </div>
-    
+            <div class="area-card area-card-6">
+                <div class="area-card-overlay">
+                    <div class="area-card-content">
+                        <h3>Sushant Golf City</h3>
+                        <p>5 Listings</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
+    <!-- Area Section  End-->
+
+    <!-- Client Section  Start-->
+    <div class="clients">
+        <h5>Our Clients</h5>
+        <h3>Clients Who Trust Us</h3>
+        <div class="container">
+            <div id="clientSlider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <!-- Card 1 -->
+                            <div class="col text-center">
+                                <div class="client-card">
+                                    <img src="images/cd.jpeg" class="d-block w-100" alt="Client 1">
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col text-center">
+                                <div class="client-card">
+                                    <img src="images/cd.jpeg" class="d-block w-100" alt="Client 2">
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="col text-center">
+                                <div class="client-card">
+                                    <img src="images/cd.jpeg" class="d-block w-100" alt="Client 3">
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="col text-center">
+                                <div class="client-card">
+                                    <img src="images/cd.jpeg" class="d-block w-100" alt="Client 4">
+                                </div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="col text-center">
+                                <div class="client-card">
+                                    <img src="images/cd.jpeg" class="d-block w-100" alt="Client 5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- Card 6 -->
+                            <div class="col text-center">
+                                <div class="client-card">
+                                    <img src="images/cd.jpeg" class="d-block w-100" alt="Client 6">
+                                </div>
+                            </div>
+                            <!-- Card 7 -->
+                            <div class="col text-center">
+                                <div class="client-card">
+                                    <img src="images/cd.jpeg" class="d-block w-100" alt="Client 7">
+                                </div>
+                            </div>
+                            <!-- Card 8 -->
+                            <div class="col text-center">
+                                <div class="client-card">
+                                    <img src="images/cd.jpeg" class="d-block w-100" alt="Client 8">
+                                </div>
+                            </div>
+                            <!-- Card 9 -->
+                            <div class="col text-center">
+                                <div class="client-card">
+                                    <img src="images/cd.jpeg" class="d-block w-100" alt="Client 9">
+                                </div>
+                            </div>
+                            <!-- Card 10 -->
+                            <div class="col text-center">
+                                <div class="client-card">
+                                    <img src="images/cd.jpeg" class="d-block w-100" alt="Client 10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#clientSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#clientSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
     </div>
-  </div>
-  </div>
-</div>
-<!-- Why Choose us Section  End-->
- 
-<!-- Testimonials Start -->
-<div class="container mt-5">
-  <h2 class="text-center mb-4">What Our Customers Say</h2>
-  <div class="row d-flex justify-content-space-between">
-      <!-- Card 1 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-              <div class="card-body">
-                  <h5 class="card-title">John Doe</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">⭐⭐⭐⭐⭐</h6>
-                  <p class="card-text">"Great service and support! Highly recommend."</p>
-              </div>
-          </div>
-      </div>
-      
-      <!-- Card 2 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-              <div class="card-body">
-                  <h5 class="card-title">Jane Smith</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">⭐⭐⭐⭐⭐</h6>
-                  <p class="card-text">"Exceptional experience from start to finish!"</p>
-              </div>
-          </div>
-      </div>
+    <!-- Client Section  End-->
 
-      <!-- Card 3 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-              <div class="card-body">
-                  <h5 class="card-title">Emily Johnson</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">⭐⭐⭐⭐⭐</h6>
-                  <p class="card-text">"Professional team that cares about their clients!"</p>
-              </div>
-          </div>
-      </div>
+    <!-- Why Choose us Section  Start-->
+    <div class="wcs">
+        <div class="overlay">
+            <div class="flex-box">
+                <div class="fbox1">
+                    <img class="img1"
+                        src="https://img.freepik.com/free-photo/3d-rendering-hospital-building_23-2150896642.jpg?t=st=1729421057~exp=1729424657~hmac=7fc84371a7bf530b0e245aa48159c203b71327aac0c237a61c95d0df9d96139e&w=360"
+                        alt="" srcset="">
+                    <img class="img2"
+                        src="https://img.freepik.com/premium-photo/contemporary-interior-studio-living-room-blue-colors-3d-rendering_1028938-268297.jpg?w=740"
+                        alt="" srcset="">
+                </div>
+                <div class="fbox2">
+                    <div class="container">
+                        <div class="accordion" id="accordionWhyChooseUs">
+                            <h2>Why Choose Us</h2>
+                            <p>We always ready to help by providing the best services for you. We believe a good place
+                                to live can make your life better</p>
+                            <!-- Accordion Item 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fas fa-chart-line me-2"></i> <!-- Icon for expertise -->
+                                        Expertise in Real Estate Market
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionWhyChooseUs">
+                                    <div class="accordion-body">
+                                        With years of experience in the industry, we have a deep understanding of the
+                                        real estate market, allowing us to provide valuable insights and advice.
+                                    </div>
+                                </div>
+                            </div>
 
-      <!-- Card 4 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-              <div class="card-body">
-                  <h5 class="card-title">Michael Brown</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">⭐⭐⭐⭐⭐</h6>
-                  <p class="card-text">"A fantastic experience! I will definitely return."</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
- <!-- Testimonials End  -->
+                            <!-- Accordion Item 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="fas fa-list me-2"></i> <!-- Icon for listings -->
+                                        Comprehensive Property Listings
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionWhyChooseUs">
+                                    <div class="accordion-body">
+                                        We offer a wide range of properties to suit all your needs, whether you're
+                                        looking for residential, commercial, or investment opportunities.
+                                    </div>
+                                </div>
+                            </div>
 
- <!-- Inquiry Box -->
- <div class="inquiry-box" type="button" data-bs-toggle="modal" data-bs-target="#enquiryModal">
-  <p>Inquiry</p>
-</div>
+                            <!-- Accordion Item 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <i class="fas fa-headset me-2"></i> <!-- Icon for customer service -->
+                                        Dedicated Customer Service
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionWhyChooseUs">
+                                    <div class="accordion-body">
+                                        Our team is committed to providing exceptional customer service, ensuring a
+                                        smooth and stress-free experience from start to finish.
+                                    </div>
+                                </div>
+                            </div>
 
-<!-- Inquiry Modal -->
-<div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="enquiryModalLabel">Property Inquiry</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <form>
-                  <div class="mb-3">
-                      <label for="name" class="form-label">Your Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                  </div>
-                  <div class="mb-3">
-                      <label for="email" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                  </div>
-                  <div class="mb-3">
-                      <label for="message" class="form-label">Message</label>
-                      <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-                  </div>
-              </form>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-color text-white">Submit Inquiry</button>
-          </div>
-      </div>
-  </div>
-</div>
+                            <!-- Accordion Item 4 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        <i class="fas fa-thumbs-up me-2"></i> <!-- Icon for trust -->
+                                        Trusted by Clients
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionWhyChooseUs">
+                                    <div class="accordion-body">
+                                        Our clients trust us for our transparency, integrity, and commitment to
+                                        delivering top-notch real estate services.
+                                    </div>
+                                </div>
+                            </div>
 
-<!-- Social Media Icon in Master -->
+                            <!-- Accordion Item 5 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        <i class="fas fa-tags me-2"></i> <!-- Icon for pricing -->
+                                        Competitive Pricing
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionWhyChooseUs">
+                                    <div class="accordion-body">
+                                        We offer competitive pricing structures that ensure you get the best value for
+                                        your investment, whether you're buying or selling.
+                                    </div>
+                                </div>
+                            </div>
 
-<div class="icon-box">
-  <a href=""><i class="fa-brands fa-facebook"></i></a>
-  <a href=""><i class="fa-brands fa-instagram"></i></a>
-  <a href=""><i class="fa-brands fa-youtube"></i></a>
-  <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-</div>
+                            <!-- Accordion Item 6 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <i class="fas fa-cogs me-2"></i> <!-- Icon for tailored solutions -->
+                                        Tailored Solutions
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionWhyChooseUs">
+                                    <div class="accordion-body">
+                                        We understand that every client is unique, so we offer personalized real estate
+                                        solutions that are tailored to meet your specific needs and goals.
+                                    </div>
+                                </div>
+                            </div>
 
-<!-- Call Icon in Master -->
-<div class="call-box">
-  <a class="hvr-icon-spin" href="tel:9123456789"><i class="fa-solid fa-phone-volume hvr-icon"></i></a>
-</div>
+                        </div>
+                    </div>
 
- <!-- Footer Section Start  -->
-  <footer>
-    <div class="flogo">
-      <img src="images/lo-lg.jpeg" alt="">
-      <p>Property Wale Babu offers expert real estate services, connecting buyers and sellers with tailored solutions for residential and commercial needs.</p>
-      <div class="icons">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose us Section  End-->
+
+    <!-- Testimonials Start -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">What Our Customers Say</h2>
+        <div class="row d-flex justify-content-space-between">
+            <!-- Card 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">⭐⭐⭐⭐⭐</h6>
+                        <p class="card-text">"Great service and support! Highly recommend."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Jane Smith</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">⭐⭐⭐⭐⭐</h6>
+                        <p class="card-text">"Exceptional experience from start to finish!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Emily Johnson</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">⭐⭐⭐⭐⭐</h6>
+                        <p class="card-text">"Professional team that cares about their clients!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Michael Brown</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">⭐⭐⭐⭐⭐</h6>
+                        <p class="card-text">"A fantastic experience! I will definitely return."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonials End  -->
+
+    <!-- Inquiry Box -->
+    <div class="inquiry-box" type="button" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+        <p>Inquiry</p>
+    </div>
+
+    <!-- Inquiry Modal -->
+    <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enquiryModalLabel">Property Inquiry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3"
+                                placeholder="Enter your message"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-color text-white">Submit Inquiry</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Media Icon in Master -->
+
+    <div class="icon-box">
         <a href=""><i class="fa-brands fa-facebook"></i></a>
         <a href=""><i class="fa-brands fa-instagram"></i></a>
         <a href=""><i class="fa-brands fa-youtube"></i></a>
         <a href=""><i class="fa-brands fa-x-twitter"></i></a>
         <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-      </div>
     </div>
-    <div class="quick-link">
-      <h3>Quick Links</h3>
-      <a class="hvr-icon-buzz" href=""><i class="fa-solid fa-address-card hvr-icon"></i>About Us</a>
-      <a class="hvr-icon-buzz" href=""><i class="fa-brands fa-servicestack hvr-icon"></i>Services</a>
-      <a class="hvr-icon-buzz" href=""><i class="fa-solid fa-diagram-project hvr-icon"></i>Projects</a>
-      <a class="hvr-icon-buzz" href=""><i class="fa-brands fa-blogger-b hvr-icon"></i>Blogs</a>
-      <a class="hvr-icon-buzz" href=""><i class="fa-solid fa-id-card-clip hvr-icon"></i>Contact Us</a>
+
+    <!-- Call Icon in Master -->
+    <div class="call-box">
+        <a class="hvr-icon-spin" href="tel:9123456789"><i class="fa-solid fa-phone-volume hvr-icon"></i></a>
     </div>
-    <div class="getin">
-      <h3>Get in Touch</h3>
-     <a class="hvr-icon-grow" href="tel:https://maps.app.goo.gl/NYgzFJWTmGijf77d7"><i class="fa-solid fa-mobile hvr-icon"></i>+919876543210</a>
-     <a class="hvr-icon-grow" href="mailto:propertywalebabu@gmail.com"><i class="fa-solid fa-envelope hvr-icon"></i>propertywalebabu@gmail.com</a>
-     <a class="hvr-icon-grow" href="https://maps.app.goo.gl/NYgzFJWTmGijf77d7"><i class="fa-solid fa-map-location-dot hvr-icon"></i>Ground Floor, Rohtas Plumeria, Flat No, T-001, near New High Court, Vibhuti Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010</a>
+
+    <!-- Footer Section Start  -->
+    <footer>
+        <div class="flogo">
+            <img src="images/lo-lg.jpeg" alt="">
+            <p>Property Wale Babu offers expert real estate services, connecting buyers and sellers with tailored
+                solutions for residential and commercial needs.</p>
+            <div class="icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="quick-link">
+            <h3>Quick Links</h3>
+            <a class="hvr-icon-buzz" href=""><i class="fa-solid fa-address-card hvr-icon"></i>About Us</a>
+            <a class="hvr-icon-buzz" href=""><i class="fa-brands fa-servicestack hvr-icon"></i>Services</a>
+            <a class="hvr-icon-buzz" href=""><i class="fa-solid fa-diagram-project hvr-icon"></i>Projects</a>
+            <a class="hvr-icon-buzz" href=""><i class="fa-brands fa-blogger-b hvr-icon"></i>Blogs</a>
+            <a class="hvr-icon-buzz" href=""><i class="fa-solid fa-id-card-clip hvr-icon"></i>Contact Us</a>
+        </div>
+        <div class="getin">
+            <h3>Get in Touch</h3>
+            <a class="hvr-icon-grow" href="tel:https://maps.app.goo.gl/NYgzFJWTmGijf77d7"><i
+                    class="fa-solid fa-mobile hvr-icon"></i>+919876543210</a>
+            <a class="hvr-icon-grow" href="mailto:propertywalebabu@gmail.com"><i
+                    class="fa-solid fa-envelope hvr-icon"></i>propertywalebabu@gmail.com</a>
+            <a class="hvr-icon-grow" href="https://maps.app.goo.gl/NYgzFJWTmGijf77d7"><i
+                    class="fa-solid fa-map-location-dot hvr-icon"></i>Ground Floor, Rohtas Plumeria, Flat No, T-001,
+                near New High Court, Vibhuti Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010</a>
+        </div>
+        <div class="location">
+            <h3>Our Location</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.155718962492!2d81.00914487443929!3d26.866793262064323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3ef93316d3f%3A0x94ddd07e53de5df5!2sProperty%20Wale%20Babu!5e0!3m2!1sen!2sin!4v1729428642190!5m2!1sen!2sin"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <!-- Footer Section End  -->
+    <div class="b-footer">
+        <p>© 2024 All Right Reserved. Designed By <a href="https://codecrafter.co.in/" target="_blank"> <img
+                    src="images/CC Logo.png" alt="" srcset=""></a></p>
     </div>
-    <div class="location">
-    <h3>Our Location</h3>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.155718962492!2d81.00914487443929!3d26.866793262064323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3ef93316d3f%3A0x94ddd07e53de5df5!2sProperty%20Wale%20Babu!5e0!3m2!1sen!2sin!4v1729428642190!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </footer>
- <!-- Footer Section End  -->
- <div class="b-footer">
-  <p>© 2024 All Right Reserved. Designed By <a href="https://codecrafter.co.in/" target="_blank"> <img src="images/CC Logo.png" alt="" srcset=""></a></p>
- </div>
 
 
-  <!-- Js Files & libs  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
+    <!-- Js Files & libs  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

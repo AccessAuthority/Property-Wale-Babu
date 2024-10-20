@@ -4,6 +4,21 @@ function toggleMobileMenu() {
     menu.classList.toggle('active');
   }
   
+  function toggleDropdown(event) {
+    event.preventDefault(); // Prevent default link behavior
+    const dropdown = document.getElementById('servicesDropdown');
+    const isActive = dropdown.classList.contains('active');
+  
+    // Close all other dropdowns
+    const allDropdowns = document.querySelectorAll('.dropdown-menu');
+    allDropdowns.forEach(dd => dd.classList.remove('active'));
+  
+    // Toggle the current dropdown
+    dropdown.classList.toggle('active', !isActive);
+  }
+  
+  
+  
 
 
 // Statistics

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 * {
   margin: 0;
@@ -28,7 +27,7 @@ body {
   color: var(--white);
 }
 /* Anchor Btn  */
-a{
+a {
   text-decoration: none;
 }
 
@@ -209,6 +208,7 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: var(--black);
   color: var(--white);
   h5 {
@@ -224,7 +224,6 @@ a{
   height: auto;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
 }
 .card {
   overflow: hidden;
@@ -292,12 +291,12 @@ a{
   margin: 0.5rem;
 }
 .card-text {
-  white-space: normal; 
-  word-wrap: break-word; 
+  white-space: normal;
+  word-wrap: break-word;
 }
 .card-body {
   height: 200px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 /* Project Section End  */
 
@@ -363,27 +362,27 @@ a{
   }
 
   &.area-card-1 {
-    background-image: url('https://img.freepik.com/premium-photo/fintech-real-estate-investment_1167636-6008.jpg?w=740');
+    background-image: url("https://img.freepik.com/premium-photo/fintech-real-estate-investment_1167636-6008.jpg?w=740");
   }
 
   &.area-card-2 {
-    background-image: url('https://img.freepik.com/premium-photo/highrise-buildings-are-common-urban-areas_10541-15290.jpg?w=900');
+    background-image: url("https://img.freepik.com/premium-photo/highrise-buildings-are-common-urban-areas_10541-15290.jpg?w=900");
   }
 
   &.area-card-3 {
-    background-image: url('https://img.freepik.com/premium-photo/urban-regeneration-projects-are-widespread_10541-15499.jpg?w=900');
+    background-image: url("https://img.freepik.com/premium-photo/urban-regeneration-projects-are-widespread_10541-15499.jpg?w=900");
   }
 
   &.area-card-4 {
-    background-image: url('https://img.freepik.com/premium-photo/highrise-buildings-are-common-urban-areas_10541-15508.jpg?w=900');
+    background-image: url("https://img.freepik.com/premium-photo/highrise-buildings-are-common-urban-areas_10541-15508.jpg?w=900");
   }
 
   &.area-card-5 {
-    background-image: url('https://img.freepik.com/premium-photo/new-luxury-residential-buildings-stylish-office-building-premium-apartments-flat-building_71956-25406.jpg?w=740');
+    background-image: url("https://img.freepik.com/premium-photo/new-luxury-residential-buildings-stylish-office-building-premium-apartments-flat-building_71956-25406.jpg?w=740");
   }
 
   &.area-card-6 {
-    background-image: url('https://img.freepik.com/premium-photo/cityscape-residential-area-with-modern-apartments-showcasing-urban-living-real-estate-investmen_1294264-4750.jpg?w=740');
+    background-image: url("https://img.freepik.com/premium-photo/cityscape-residential-area-with-modern-apartments-showcasing-urban-living-real-estate-investmen_1294264-4750.jpg?w=740");
   }
 
   .area-card-overlay {
@@ -421,7 +420,7 @@ a{
 /* Area Section End  */
 
 /* Client Section Start  */
-.clients{
+.clients {
   justify-content: center;
   gap: 10px;
   align-items: center;
@@ -430,22 +429,22 @@ a{
   height: auto;
   width: 100%;
   padding: 50px;
-  h5{
+  h5 {
     text-transform: uppercase;
     font-weight: 800;
     border-bottom: 1px solid var(--yellow);
     border-radius: 5px;
   }
-  h3{
+  h3 {
     font-weight: 700;
   }
 }
 .client-card {
   border-radius: 8px;
-  overflow: hidden; 
+  overflow: hidden;
   img {
-      height: 150px;
-      object-fit: cover; 
+    height: 150px;
+    object-fit: cover;
   }
 }
 /* Client Section End  */
@@ -453,56 +452,56 @@ a{
 /* Why Choose Us Section Start  */
 .wcs {
   position: relative;
-  width: 100%; 
-  height: 650px; 
-  background-image: url('https://img.freepik.com/premium-photo/modern-interior-design-with-bold-geometric-pattern-set-against-deep-sapphire-blue-backdrop_941611-4598.jpg?w=900'); 
+  width: 100%;
+  height: 650px;
+  background-image: url("https://img.freepik.com/premium-photo/modern-interior-design-with-bold-geometric-pattern-set-against-deep-sapphire-blue-backdrop_941611-4598.jpg?w=900");
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   background-attachment: fixed;
 }
 
 .overlay {
   padding: 50px 40px;
   display: flex;
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color:rgba(14, 36, 49, 0.7);
-  display: flex; 
-  align-items: center; 
+  background-color: rgba(14, 36, 49, 0.7);
+  display: flex;
+  align-items: center;
   justify-content: center;
-  flex-direction: column; 
-  color: white; 
-  text-align: center; 
-  
-  .flex-box{
+  flex-direction: column;
+  color: white;
+  text-align: center;
+
+  .flex-box {
     gap: 10px;
     display: flex;
     height: 100%;
     width: 100%;
 
-    .fbox1{
+    .fbox1 {
       height: 100%;
       width: 40%;
-      .img1{
+      .img1 {
         position: absolute;
         height: 450px;
         width: 350px;
         left: 50px;
         border-radius: 10px;
       }
-      .img2{
+      .img2 {
         position: absolute;
         height: 250px;
         width: 300px;
         left: 230px;
-        top:320px;
+        top: 320px;
         border-radius: 10px;
       }
     }
-    .fbox2{
+    .fbox2 {
       padding: 20px 0;
       gap: 10px;
       display: flex;
@@ -514,21 +513,21 @@ a{
 }
 
 .accordion-button {
-  background-color: transparent; 
-  color: #000; 
+  background-color: transparent;
+  color: #000;
 }
 
 .accordion-button:hover {
   background-color: rgba(0, 0, 0, 0.1);
 
-.accordion-body {
-  background-color: rgba(255, 0, 0, 0); 
-}
+  .accordion-body {
+    background-color: rgba(255, 0, 0, 0);
+  }
 }
 /* Why Choose Us Section End  */
 
 /* Footer Section Start  */
-footer{
+footer {
   color: var(--white);
   display: flex;
   height: auto;
@@ -537,24 +536,24 @@ footer{
   width: 100%;
   padding: 40px;
   background-color: var(--black);
-  .flogo{
+  .flogo {
     display: flex;
     flex-direction: column;
-    gap: 20px ;
+    gap: 20px;
     color: var(--white);
     height: 270px;
     width: 33%;
-    img{
+    img {
       height: 80px;
       width: 60%;
     }
-    .icons{
+    .icons {
       height: 40px;
       width: 100%;
       display: flex;
       gap: 10px;
       align-items: center;
-      i{
+      i {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -565,7 +564,7 @@ footer{
         border: 1px solid var(--white);
         transition: transform 0.3s ease;
         color: var(--white);
-        &:hover{
+        &:hover {
           transform: translateY(-10px);
           color: var(--white);
           background-color: var(--yellow);
@@ -573,42 +572,42 @@ footer{
       }
     }
   }
-  .quick-link{
+  .quick-link {
     display: flex;
     flex-direction: column;
     gap: 10px;
     height: 270px;
     width: 33%;
-    a{
+    a {
       width: fit-content;
       display: flex;
       gap: 10px;
       align-items: center;
       color: var(--white);
-      &:hover{
+      &:hover {
         color: var(--yellow);
       }
     }
   }
-  .getin{
+  .getin {
     gap: 10px;
     display: flex;
     flex-direction: column;
     height: 270px;
     width: 33%;
-    a{
+    a {
       display: flex;
       gap: 10px;
       color: var(--white);
       align-items: center;
       height: auto;
       width: 100%;
-      &:hover{
+      &:hover {
         color: var(--yellow);
       }
     }
   }
-  .location{
+  .location {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -617,16 +616,16 @@ footer{
   }
 }
 /* Footer Us Section End  */
- 
-.b-footer{
+
+.b-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
   width: 100%;
-  background-color:var(--black);
+  background-color: var(--black);
   color: var(--white);
-  a>img{
+  a > img {
     height: 40px;
   }
 }
@@ -641,7 +640,7 @@ footer{
   transform: translateY(-50%);
   background-color: var(--red);
   color: var(--white);
-  z-index: 9999; 
+  z-index: 9999;
   cursor: pointer;
   height: 150px;
   width: 50px;
@@ -665,23 +664,22 @@ footer{
   transform: translateY(-50%);
   background-color: var(--red);
   color: var(--white);
-  z-index: 9999; 
+  z-index: 9999;
   cursor: pointer;
   height: 150px;
   width: 50px;
-  a{
+  a {
     display: flex;
     justify-content: center;
     width: 100%;
     color: var(--white);
     transition: transform 0.3s ease;
     color: var(--white);
-    &:hover{
+    &:hover {
       transform: translateX(-10px);
       color: var(--white);
     }
   }
-
 }
 
 .call-box {
@@ -695,12 +693,12 @@ footer{
   transform: translateY(-50%);
   background-color: var(--red);
   color: var(--white);
-  z-index: 9999; 
+  z-index: 9999;
   cursor: pointer;
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  a{
+  a {
     height: 100%;
     width: 100%;
     display: flex;
@@ -714,9 +712,13 @@ footer{
 }
 /* Master Button End  */
 
-
 .mobile-nav {
   display: none; /* Hide by default, show on mobile */
+}
+
+.mobile-nav.active {
+  display: flex; /* Show the mobile nav when active */
+  flex-direction: column; /* Stack items vertically */
 }
 
 .mobile-header {
@@ -724,7 +726,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color:var(--white); /* Change as needed */
+  background-color: var(--white); /* Change as needed */
 }
 
 .mobile-logo {
@@ -743,8 +745,12 @@ footer{
   color: var(--black);
   display: none; /* Hide menu by default */
   flex-direction: column;
-  background-color:var(--white); /* Change as needed */
+  background-color: var(--white); /* Change as needed */
   padding: 10px;
+}
+
+.mobile-menu.active {
+  display: flex; /* Show the menu when active */
 }
 
 .mobile-menu a {
@@ -755,9 +761,21 @@ footer{
 }
 
 .mobile-menu a:hover {
-  background: #555; /* Change as needed */
+  color: var(--white);
+  background: var(--black); /* Change as needed */
 }
 
+.dropdown-menu {
+  margin-top: 45px;
+  display: none; /* Hide by default */
+  flex-direction: column; /* Stack items vertically */
+  padding: 0; /* Reset padding to avoid spacing issues */
+}
 
+.dropdown-menu.active {
+  display: flex; /* Show when active */
+}
 
-
+.dropdown-menu a {
+  padding: 10px; /* Maintain padding for dropdown items */
+}
