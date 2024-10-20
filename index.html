@@ -20,14 +20,11 @@
   <!-- Stylesheets   -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="hover.css">
+  <link rel="stylesheet" href="responsive.css">
   <title>Home</title>
 </head>
 
 <body>
-
-  <!-- Sticky Social Media  -->
-
-  <!-- Sticky Social Media  -->
 
   <!-- Top Nav Start -->
   <div class="tnav">
@@ -70,6 +67,34 @@
     </div>
   </div>
   <!-- Nav Section  End-->
+
+<!-- Mobile Navigation Start -->
+<div class="mobile-nav">
+    <div class="mobile-header">
+      <img src="images/logo.jpg" alt="Logo" class="mobile-logo">
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="" class="active-h">Home</a>
+      <a href="">About Us</a>
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle" onclick="event.preventDefault();" data-bs-toggle="dropdown" aria-expanded="false">
+          Services
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Property Management</a></li>
+          <li><a class="dropdown-item" href="#">Real Estate Brokerage</a></li>
+          <li><a class="dropdown-item" href="#">Real Estate Investment Consulting</a></li>
+        </ul>
+      </div>
+      <a href="">Projects</a>
+      <a href="">Blog</a>
+      <a href="">Clients</a>
+      <a href="">Testimonials</a>
+      <a href="">Contact Us</a>
+    </div>
+  </div>
+  <!-- Mobile Navigation End -->
 
   <!-- Carousel Section  Start-->
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">

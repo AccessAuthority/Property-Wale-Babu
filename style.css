@@ -83,9 +83,9 @@ a{
 
 /* Nav Bar Start  */
 .nav {
-  z-index: 1;
   position: sticky;
   top: 0;
+  z-index: 999;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
@@ -633,7 +633,7 @@ footer{
 
 /* Bottom Footer End  */
 
-
+/* Master Buttons  */
 .inquiry-box {
   position: fixed;
   left: 0;
@@ -644,7 +644,7 @@ footer{
   z-index: 9999; 
   cursor: pointer;
   height: 150px;
-  width: 60px;
+  width: 50px;
 }
 
 .inquiry-box p {
@@ -712,3 +712,52 @@ footer{
     color: var(--white);
   }
 }
+/* Master Button End  */
+
+
+.mobile-nav {
+  display: none; /* Hide by default, show on mobile */
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color:var(--white); /* Change as needed */
+}
+
+.mobile-logo {
+  height: 40px; /* Adjust logo size */
+}
+
+.mobile-menu-toggle {
+  background: none;
+  border: none;
+  color: var(--black); /* Change as needed */
+  font-size: 24px; /* Size of the menu icon */
+  cursor: pointer;
+}
+
+.mobile-menu {
+  color: var(--black);
+  display: none; /* Hide menu by default */
+  flex-direction: column;
+  background-color:var(--white); /* Change as needed */
+  padding: 10px;
+}
+
+.mobile-menu a {
+  color: var(--black); /* Change as needed */
+  text-decoration: none;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.mobile-menu a:hover {
+  background: #555; /* Change as needed */
+}
+
+
+
+

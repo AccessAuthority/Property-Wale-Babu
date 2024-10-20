@@ -1,3 +1,11 @@
+// Responsive Menu Toggle btn 
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('active');
+  }
+  
+
+
 // Statistics
 function animateStat(element, target) {
     let count = 0;
@@ -21,3 +29,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // AOS Initialization 
 AOS.init();
+
+  

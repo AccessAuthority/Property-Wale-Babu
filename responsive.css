@@ -1,0 +1,108 @@
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Stack the top navigation items */
+  .tnav, .nav {
+     display: none;
+  }
+  /* Carousel images should scale properly */
+  .carousel-item img {
+      width: 100%;  
+      height: auto; 
+  }
+
+  /* About section adjustments */
+  .about{
+    padding: 40px 10px;
+    gap: 80px;
+    h2{
+     font-size: 20px;
+    }
+  }
+  .about-row {
+      flex-direction: column; 
+  }
+
+  .about-col1 {
+      width: 100%; 
+      padding: 10px 0; 
+  }
+.about-col2 {
+  border: none;
+  height: fit-content;
+  padding-top: 40px;
+    width: 100%; 
+}
+
+  /* Services section adjustments */
+  .card-container {
+    margin: 0 auto;
+      flex-direction: column;
+  }
+.services h3{
+  text-align: center;
+  font-size: 20px;
+}
+  .card {
+      margin-bottom: 15px;
+  }
+
+  /* Achievement section adjustments */
+  .achievement-content .row {
+      flex-direction: column;
+  }
+
+  /* Project section adjustments */
+  .project .row {
+      flex-direction: column; 
+  }
+.area  h3{
+  font-size: 20px !important;
+}
+  /* Area section adjustments */
+  .prt-areas {
+      flex-direction: column;
+      align-items: center; 
+  }
+
+  .area-card {
+      width: 100%;
+      margin: 10px 0; 
+  }
+
+  /* Client section adjustments */
+  .clients .carousel-inner .row {
+      flex-direction: column; 
+  }
+
+  /* Why Choose Us section adjustments */
+  .wcs {
+      display: none; 
+  }
+
+  .fbox1, .fbox2 {
+      width: 100%; 
+      padding: 10px 0; 
+  }
+  footer{
+    padding: 10px;
+    flex-direction: column;
+   }
+   .flogo, .getin, .location, .quick-link{
+    width: 100%!important;
+    height: 100%;
+   }
+   .b-footer{
+      padding-left: 20px !important;
+   }
+
+   .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mobile-menu.active {
+    display: flex; 
+  }
+}
