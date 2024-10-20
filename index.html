@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- AOS Lib CDN  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Fontawesome CDN  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -16,6 +19,7 @@
 
   <!-- Stylesheets   -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hover.css">
   <title>Home</title>
 </head>
 
@@ -28,12 +32,12 @@
   <!-- Top Nav Start -->
   <div class="tnav">
     <div class="tcol1">
-      <a href="tel:9123456789"><i class="fa-solid fa-phone"></i> +919876543210</a>
-      <a href="https://maps.app.goo.gl/NYgzFJWTmGijf77d7" target="_blank"><i class="fa-solid fa-location-dot"></i> Rohtas Plumeria,
+      <a class="hvr-icon-buzz" href="tel:9123456789"><i class="fa-solid fa-phone hvr-icon"></i> +919876543210</a>
+      <a class="hvr-icon-buzz" href="https://maps.app.goo.gl/NYgzFJWTmGijf77d7" target="_blank"><i class="fa-solid fa-location-dot hvr-icon"></i> Rohtas Plumeria,
         near New High Court, Gomti Nagar, Lucknow, 226010</a>
     </div>
     <div class="tcol2">
-      <a href="mailto:propertywalebabu@gmail.com"><i class="fa-solid fa-envelope"></i> propertywalebabu@gmail.com</a>
+      <a class="hvr-icon-buzz" href="mailto:propertywalebabu@gmail.com"><i class="fa-solid fa-envelope hvr-icon"></i> propertywalebabu@gmail.com</a>
     </div>
   </div>
   <!-- Top Nav End -->
@@ -58,41 +62,8 @@
       <a href="">Clients</a>
       <a href="">Testimonials</a>
       <a href="">Contact Us</a>
-      <button type="button" data-bs-toggle="modal" data-bs-target="#enquiryModal"
-        class="btn btn-color text-white">Inquiry</button>
-
-      <!-- Inquiry Modal -->
-      <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="enquiryModalLabel">Property Inquiry</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                  <label for="name" class="form-label">Your Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-color text-white">Submit Inquiry</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Inquiry Modal End -->
+      <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#enquiryModal"
+        class="btn btn-color text-white">Inquiry</button> -->
     </div>
     <div class="ncol2">
       <img src="images/logo.jpg" alt="" srcset="">
@@ -135,17 +106,17 @@
   <!-- Carousel Section  Start-->
 
   <!-- About Section  Start-->
-  <div class="about">
+  <div class="about"  data-aos="fade-up">
     <h5>who we are</h5>
     <!-- <h2>We Provide Personalized Real Estate Solutions in Lucknow</h2> -->
     <div class="about-row">
       <div class="about-col1">
-        <h2>Property Wale Babu in Lucknow</h2>
-        <p> <strong>Welcome to Property Wale Babu! </strong> We are a leading real estate company dedicated to providing exceptional services in buying, selling, and renting properties. With a strong presence in the market and a team of experienced professionals, we aim to simplify the real estate process for our clients.</p>
-        <h4>Our Mission</h4>
-        <p>At Property Wale Babu, our mission is to empower individuals and families to make informed real estate decisions. We believe that everyone deserves a place to call home, and we are committed to helping you find that perfect property.</p>
-        <h4>Services We Offer</h4>
-        <ul>
+        <h2 data-aos="fade-right">Property Wale Babu in Lucknow</h2>
+        <p data-aos="fade-right"> <strong>Welcome to Property Wale Babu! </strong> We are a leading real estate company dedicated to providing exceptional services in buying, selling, and renting properties. With a strong presence in the market and a team of experienced professionals, we aim to simplify the real estate process for our clients.</p>
+        <h4 data-aos="fade-right">Our Mission</h4>
+        <p data-aos="fade-right">At Property Wale Babu, our mission is to empower individuals and families to make informed real estate decisions. We believe that everyone deserves a place to call home, and we are committed to helping you find that perfect property.</p>
+        <h4 data-aos="fade-right">Services We Offer</h4>
+        <ul data-aos="fade-right">
           <li>Residential Sales and Rentals</li>
           <li>Commercial Real Estate</li>
           <li>Property Management</li>
@@ -162,11 +133,11 @@
 
   <!-- Services Section  Start-->
    <div class="services">
-    <h5>Our Services</h5>
-    <h3>Our Comprehensive Real Estate Services in Lucknow</h3>
-    <div class="card-container">
+    <h5  data-aos="fade-up">Our Services</h5>
+    <h3  data-aos="fade-up">Our Comprehensive Real Estate Services in Lucknow</h3>
+    <div class="card-container"  data-aos="fade-up">
       <div class="card" >
-        <img class="card-img-top" src="https://img.freepik.com/free-photo/mumbai-skyline-skyscrapers-construction_469504-21.jpg?t=st=1729359407~exp=1729363007~hmac=938f793f6f9f4108f79d93c7735b7622b0840a3bc542a7d8203f214e6bb406da&w=740" alt="Card image cap">
+        <img class="card-img-top zoom" src="https://img.freepik.com/free-photo/mumbai-skyline-skyscrapers-construction_469504-21.jpg?t=st=1729359407~exp=1729363007~hmac=938f793f6f9f4108f79d93c7735b7622b0840a3bc542a7d8203f214e6bb406da&w=740" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Residential and Rentals</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -174,7 +145,7 @@
         </div>
       </div>
       <div class="card"  >
-        <img class="card-img-top" src="https://img.freepik.com/premium-photo/contemporary-residential-buildings-with-balconies-gardens_979520-118091.jpg?w=740" alt="Card image cap">
+        <img class="card-img-top zoom" src="https://img.freepik.com/premium-photo/contemporary-residential-buildings-with-balconies-gardens_979520-118091.jpg?w=740" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Commercial Real Estate</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -182,7 +153,7 @@
         </div>
       </div>
       <div class="card"  >
-        <img class="card-img-top" src="https://img.freepik.com/premium-photo/rendering-new-home_754951-4041.jpg?w=826" alt="Card image cap">
+        <img class="card-img-top zoom" src="https://img.freepik.com/premium-photo/rendering-new-home_754951-4041.jpg?w=826" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Property Management</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -190,7 +161,7 @@
         </div>
       </div>
       <div class="card"  >
-        <img class="card-img-top" src="https://img.freepik.com/free-photo/keys-fountain-pen-house-paper-cut-out-calculator-architectural-blueprints_23-2148038690.jpg?t=st=1729359557~exp=1729363157~hmac=5859c083123a7acb4591c40c8f714517de8fdc56f2a73970d556f22435dedf09&w=740" alt="Card image cap">
+        <img class="card-img-top zoom" src="https://img.freepik.com/free-photo/keys-fountain-pen-house-paper-cut-out-calculator-architectural-blueprints_23-2148038690.jpg?t=st=1729359557~exp=1729363157~hmac=5859c083123a7acb4591c40c8f714517de8fdc56f2a73970d556f22435dedf09&w=740" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Real Estate Consultancy</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -205,7 +176,7 @@
   <div class="container-fliud achievement-section">
     <div class="achievement-content text-center">
         <h2>Our Achievements</h2>
-        <div class="row pt-4">
+        <div class="row pt-4"  data-aos="fade-up">
             <div class="col-md-4">
                 <h3 id="clients">0</h3>
                 <p>Happy Clients</p>
@@ -226,9 +197,9 @@
 
  <!-- Project Section  Start-->
  <div class="container mt-5 pb-5 project">
-  <h5 class="p-title mb-4">Our Featured Projects</h5>
-  <h3 class="text-center pb-2 fw-bold">Real Estate Company in Lucknow</h3>
-  <p class="text-center pb-3">Whether you’re looking for a contemporary home, a retail space, or an investment opportunity, our portfolio demonstrates our <br> capability to deliver results that exceed expectations. Join us in exploring the projects that highlight <br> our expertise and passion for transforming spaces into thriving environments.</p>
+  <h5 class="p-title mb-4"  data-aos="fade-up">Our Featured Projects</h5>
+  <h3 class="text-center pb-2 fw-bold"  data-aos="fade-up">Real Estate Company in Lucknow</h3>
+  <p class="text-center pb-3"  data-aos="fade-up">Whether you’re looking for a contemporary home, a retail space, or an investment opportunity, our portfolio demonstrates our <br> capability to deliver results that exceed expectations. Join us in exploring the projects that highlight <br> our expertise and passion for transforming spaces into thriving environments.</p>
 
   <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -428,7 +399,7 @@
 
 <div class="wcs">
   <div class="overlay">
-  <div class="flex-box">
+  <div class="flex-box" >
     <div class="fbox1">
       <img class="img1" src="https://img.freepik.com/free-photo/3d-rendering-hospital-building_23-2150896642.jpg?t=st=1729421057~exp=1729424657~hmac=7fc84371a7bf530b0e245aa48159c203b71327aac0c237a61c95d0df9d96139e&w=360" alt="" srcset="">
       <img class="img2" src="https://img.freepik.com/premium-photo/contemporary-interior-studio-living-room-blue-colors-3d-rendering_1028938-268297.jpg?w=740" alt="" srcset="">
@@ -587,6 +558,59 @@
   </div>
 </div>
  <!-- Testimonials End  -->
+
+ <!-- Inquiry Box -->
+ <div class="inquiry-box" type="button" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+  <p>Inquiry</p>
+</div>
+
+<!-- Inquiry Modal -->
+<div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="enquiryModalLabel">Property Inquiry</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Your Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  </div>
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-color text-white">Submit Inquiry</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Social Media Icon in Master -->
+
+<div class="icon-box">
+  <a href=""><i class="fa-brands fa-facebook"></i></a>
+  <a href=""><i class="fa-brands fa-instagram"></i></a>
+  <a href=""><i class="fa-brands fa-youtube"></i></a>
+  <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+
+<!-- Call Icon in Master -->
+<div class="call-box">
+  <a class="hvr-icon-spin" href="tel:9123456789"><i class="fa-solid fa-phone-volume hvr-icon"></i></a>
+</div>
+
  <!-- Footer Section Start  -->
   <footer>
     <div class="flogo">
@@ -602,17 +626,17 @@
     </div>
     <div class="quick-link">
       <h3>Quick Links</h3>
-      <a href=""><i class="fa-solid fa-address-card"></i>About Us</a>
-      <a href=""><i class="fa-brands fa-servicestack"></i>Services</a>
-      <a href=""><i class="fa-solid fa-diagram-project"></i>Projects</a>
-      <a href=""><i class="fa-brands fa-blogger-b"></i>Blogs</a>
-      <a href=""><i class="fa-solid fa-id-card-clip"></i>Contact Us</a>
+      <a class="hvr-icon-buzz" href=""><i class="fa-solid fa-address-card hvr-icon"></i>About Us</a>
+      <a class="hvr-icon-buzz" href=""><i class="fa-brands fa-servicestack hvr-icon"></i>Services</a>
+      <a class="hvr-icon-buzz" href=""><i class="fa-solid fa-diagram-project hvr-icon"></i>Projects</a>
+      <a class="hvr-icon-buzz" href=""><i class="fa-brands fa-blogger-b hvr-icon"></i>Blogs</a>
+      <a class="hvr-icon-buzz" href=""><i class="fa-solid fa-id-card-clip hvr-icon"></i>Contact Us</a>
     </div>
     <div class="getin">
       <h3>Get in Touch</h3>
-     <a href="tel:https://maps.app.goo.gl/NYgzFJWTmGijf77d7"><i class="fa-solid fa-mobile"></i>+919876543210</a>
-     <a href="mailto:propertywalebabu@gmail.com"><i class="fa-solid fa-envelope"></i>propertywalebabu@gmail.com</a>
-     <a href="https://maps.app.goo.gl/NYgzFJWTmGijf77d7"><i class="fa-solid fa-map-location-dot"></i>Ground Floor, Rohtas Plumeria, Flat No, T-001, near New High Court, Vibhuti Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010</a>
+     <a class="hvr-icon-grow" href="tel:https://maps.app.goo.gl/NYgzFJWTmGijf77d7"><i class="fa-solid fa-mobile hvr-icon"></i>+919876543210</a>
+     <a class="hvr-icon-grow" href="mailto:propertywalebabu@gmail.com"><i class="fa-solid fa-envelope hvr-icon"></i>propertywalebabu@gmail.com</a>
+     <a class="hvr-icon-grow" href="https://maps.app.goo.gl/NYgzFJWTmGijf77d7"><i class="fa-solid fa-map-location-dot hvr-icon"></i>Ground Floor, Rohtas Plumeria, Flat No, T-001, near New High Court, Vibhuti Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010</a>
     </div>
     <div class="location">
     <h3>Our Location</h3>
@@ -631,7 +655,7 @@
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 

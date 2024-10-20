@@ -227,7 +227,15 @@ a{
   flex-wrap: wrap;
 }
 .card {
+  overflow: hidden;
   width: 20rem;
+}
+.zoom {
+  transition: transform 0.5s ease;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
 }
 /* Services Section End  */
 
@@ -595,6 +603,9 @@ footer{
       align-items: center;
       height: auto;
       width: 100%;
+      &:hover{
+        color: var(--yellow);
+      }
     }
   }
   .location{
@@ -617,5 +628,87 @@ footer{
   color: var(--white);
   a>img{
     height: 40px;
+  }
+}
+
+/* Bottom Footer End  */
+
+
+.inquiry-box {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--red);
+  color: var(--white);
+  z-index: 9999; 
+  cursor: pointer;
+  height: 150px;
+  width: 60px;
+}
+
+.inquiry-box p {
+  margin-top: 68px;
+  font-size: 25px;
+  font-weight: 800;
+  transform: rotate(-90deg);
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--red);
+  color: var(--white);
+  z-index: 9999; 
+  cursor: pointer;
+  height: 150px;
+  width: 50px;
+  a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: var(--white);
+    transition: transform 0.3s ease;
+    color: var(--white);
+    &:hover{
+      transform: translateX(-10px);
+      color: var(--white);
+    }
+  }
+
+}
+
+.call-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  right: 0;
+  top: 95%;
+  transform: translateY(-50%);
+  background-color: var(--red);
+  color: var(--white);
+  z-index: 9999; 
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--white);
+    transition: transform 0.3s ease;
+    color: var(--white);
   }
 }

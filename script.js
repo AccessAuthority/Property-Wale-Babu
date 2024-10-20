@@ -16,4 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     animateStat(document.getElementById('clients'), 500);
     animateStat(document.getElementById('properties'), 300);
     animateStat(document.getElementById('experience'), 10);
-}); 
+});
+
+
+// AOS Initialization 
+AOS.init();
