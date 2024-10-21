@@ -219,6 +219,7 @@ a {
 }
 .card-container {
   justify-content: center;
+  align-items: center;
   gap: 10px;
   padding: 10px 10px;
   height: auto;
@@ -643,11 +644,11 @@ footer {
   z-index: 9999;
   cursor: pointer;
   height: 150px;
-  width: 50px;
+  width: 40px;
 }
 
 .inquiry-box p {
-  margin-top: 68px;
+  margin-top: 75px;
   font-size: 25px;
   font-weight: 800;
   transform: rotate(-90deg);
@@ -713,12 +714,12 @@ footer {
 /* Master Button End  */
 
 .mobile-nav {
-  display: none; /* Hide by default, show on mobile */
+  display: none; 
 }
 
 .mobile-nav.active {
-  display: flex; /* Show the mobile nav when active */
-  flex-direction: column; /* Stack items vertically */
+  display: flex; 
+  flex-direction: column; 
 }
 
 .mobile-header {
@@ -726,35 +727,35 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: var(--white); /* Change as needed */
+  background-color: var(--white); 
 }
 
 .mobile-logo {
-  height: 40px; /* Adjust logo size */
+  height: 40px; 
 }
 
 .mobile-menu-toggle {
   background: none;
   border: none;
-  color: var(--black); /* Change as needed */
-  font-size: 24px; /* Size of the menu icon */
+  color: var(--black); 
+  font-size: 24px; 
   cursor: pointer;
 }
 
 .mobile-menu {
   color: var(--black);
-  display: none; /* Hide menu by default */
+  display: none; 
   flex-direction: column;
-  background-color: var(--white); /* Change as needed */
+  background-color: var(--white); 
   padding: 10px;
 }
 
 .mobile-menu.active {
-  display: flex; /* Show the menu when active */
+  display: flex; 
 }
 
 .mobile-menu a {
-  color: var(--black); /* Change as needed */
+  color: var(--black);
   text-decoration: none;
   padding: 10px;
   transition: background 0.3s;
@@ -762,20 +763,19 @@ footer {
 
 .mobile-menu a:hover {
   color: var(--white);
-  background: var(--black); /* Change as needed */
+  background: var(--black);
 }
 
 .dropdown-menu {
-  margin-top: 45px;
-  display: none; /* Hide by default */
-  flex-direction: column; /* Stack items vertically */
-  padding: 0; /* Reset padding to avoid spacing issues */
+  display: none;
+  flex-direction: column; 
+  padding: 0; 
 }
 
 .dropdown-menu.active {
-  display: flex; /* Show when active */
+  display: flex; 
 }
 
 .dropdown-menu a {
-  padding: 10px; /* Maintain padding for dropdown items */
+  padding: 10px; 
 }

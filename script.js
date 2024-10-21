@@ -19,10 +19,31 @@ function toggleDropdown(event) {
     }
 }
 
-  
-  
-  
 
+//Header & Footer 
+function loadHeader() {
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+}
+
+function loadFooter() {
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+}
+
+// Load header and footer on page load
+document.addEventListener("DOMContentLoaded", function() {
+    loadHeader();
+    loadFooter();
+});
+
+  
 
 // Statistics
 function animateStat(element, target) {
@@ -47,5 +68,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // AOS Initialization 
 AOS.init();
-
-  

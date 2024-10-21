@@ -10,7 +10,9 @@
       width: 100%;  
       height: auto; 
   }
-
+  .dropdown-menu{
+    margin-top: 45px;
+  }
   /* About section adjustments */
   .about{
     padding: 40px 20px;
