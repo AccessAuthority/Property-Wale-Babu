@@ -22,8 +22,8 @@ body {
   --white: #fff;
 }
 .crumb {
-    color: var(--black);
-    background:url('images/CRUMB-IMG\ copy.jpg');
+    color: var(--white);
+    background:url('https://img.freepik.com/premium-photo/minimalist-house-illustration-minimalist-3d-illustration-white-house-against-blue-background_1288054-4963.jpg?w=900');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -41,9 +41,9 @@ body {
     text-align: center;
 }
 
-.our-mission h2 span {
-    color: var(--red);
+.our-mission h2 {
     font-weight: bold;
+    color: var(--black);
 }
 
 .about-us {
@@ -51,7 +51,7 @@ body {
 }
 
 .about-us h5 {
-    color: red;
+    color:var(--black);
 }
 
 .working-experience {
@@ -75,7 +75,6 @@ body {
 
 .experience-text span {
     font-size: 4rem;
-    font-weight: bold;
 }
 
 .experience-text small {
@@ -88,7 +87,7 @@ body {
 
 .list-bullets li::before {
     content: '■';
-    color: red;
+    color:var(--black);
     margin-right: 10px;
 }
 
@@ -103,7 +102,7 @@ body {
 }
 
 .what-we-do h2 span {
-    color:var(--red);
+    color:var(--black);
 }
 
 .card-custom {
@@ -116,7 +115,7 @@ body {
 }
 
 .card-custom .icon {
-    background-color: red;
+    background-color: var(--black);
     color: #fff;
     padding: 15px;
     font-size: 2rem;
@@ -157,7 +156,7 @@ body {
 }
 
 .values-section h2 span {
-    color: red;
+    color:var(--black);
 }
 
 .value-box {

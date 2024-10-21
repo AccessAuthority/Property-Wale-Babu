@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* Variable */
+:root {
+  --black: #0e2431;
+  --red: #fc3a52;
+  --yellow: #fc3a52;
+  /* --yellow: #fadf12; */
+  --optional: #e8d5b7;
+  --white: #fff;
+}
+.btn{
+    background-color: var(--black) !important;
+    border: none !important;
+}
+/* Blog Section   */
+.blog-container {
+  height: auto;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  .blogs {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+    .card{
+        height: 450px;
+        h5{
+            white-space: nowrap; 
+            overflow: hidden;     
+            text-overflow: ellipsis; 
+        }
+        .card-text{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;  
+            overflow: hidden;       
+            text-overflow: ellipsis; 
+        }
+    }
+  }
+  .options{
+    gap: 20px;
+    background-color:rgb(235, 236, 238); 
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    .side-card{
+        gap: 5px;
+        display: flex;
+        height: 50px;
+        width: 100%;
+        img{
+            height: 50px;
+            border-radius: 5px;
+            width: 120px;
+        }
+        p{
+            height: 100%;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;  
+            overflow: hidden;       
+            text-overflow: ellipsis; 
+        }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .blog-container{
+    flex-direction: column;
+    .options{
+     width: 100%;
+  }
+  .blogs{
+    width: 100%;
+  }
+}
+}
