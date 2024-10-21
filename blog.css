@@ -66,10 +66,16 @@ body {
     flex-direction: column;
     padding: 10px;
     .side-card{
+      color: #0e2431;
+      overflow: hidden;
+      border-bottom: 1px solid var(--black);
         gap: 5px;
         display: flex;
-        height: 50px;
+        height: 60px;
         width: 100%;
+        &:hover{
+           color: #fc3a52;
+        }
         img{
             height: 50px;
             border-radius: 5px;
@@ -86,6 +92,20 @@ body {
     }
   }
 }
+
+.cate{
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: #0e2431;
+  border-radius: 0;
+  background-color: white;
+  &:hover{
+      color: white;
+      background: #0e2431;
+  }
+}
+
 @media (max-width: 768px) {
   .blog-container{
     flex-direction: column;
