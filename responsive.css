@@ -82,7 +82,12 @@
   .clients .carousel-inner .row {
       flex-direction: column; 
   }
-
+   .client-card{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
   /* Why Choose Us section adjustments */
   .wcs {
     justify-content: center;

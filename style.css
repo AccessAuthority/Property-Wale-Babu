@@ -462,8 +462,13 @@ a {
   }
 }
 .client-card {
+  border: 1px solid #0e2431;
   border-radius: 8px;
   overflow: hidden;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   img {
     height: 150px;
     object-fit: cover;
