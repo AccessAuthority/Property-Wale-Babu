@@ -1,23 +1,3 @@
-// Responsive Menu Toggle btn 
-function toggleMobileMenu() {
-    const menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('active');
-}
-
-function toggleDropdown(event) {
-    event.preventDefault(); // Prevent default link behavior
-    const dropdown = document.getElementById('servicesDropdown');
-    const isActive = dropdown.classList.contains('active');
-
-    // Close all other dropdowns
-    const allDropdowns = document.querySelectorAll('.dropdown-menu');
-    allDropdowns.forEach(dd => dd.classList.remove('active'));
-
-    // If it was not active, open it
-    if (!isActive) {
-        dropdown.classList.add('active');
-    }
-}
 
 
 //Header & Footer 
@@ -68,3 +48,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // AOS Initialization 
 AOS.init();
+
+
+// Hover Effect Why Choose us 
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const wcsElement = document.querySelector('.wcs');
+
+    wcsElement.addEventListener('mousemove', function(e) {
+        const { offsetWidth, offsetHeight } = this;
+        const xPos = e.clientX - this.getBoundingClientRect().left; // Mouse X position relative to the element
+        const yPos = e.clientY - this.getBoundingClientRect().top; // Mouse Y position relative to the element
+
+        // Calculate new background position based on mouse position
+        const xPercent = (xPos / offsetWidth) * 100; // Percentage of the width
+        const yPercent = (yPos / offsetHeight) * 100; // Percentage of the height
+
+        // Update background position
+        this.style.backgroundPosition = `${xPercent}% ${yPercent}%`;
+    });
+
+    // Optional: Reset background position on mouse leave
+    wcsElement.addEventListener('mouseleave', function() {
+        this.style.backgroundPosition = 'center center'; // Reset to original position
+    });
+});
+
+

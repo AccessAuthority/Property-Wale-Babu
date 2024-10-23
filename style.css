@@ -80,66 +80,16 @@ a {
 }
 /* Top Nav End  */
 
-/* Nav Bar Start  */
-.nav {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  height: 100px;
-  width: 100%;
-  padding: 0 50px;
-  background-color: var(--white);
-}
-.ncol1 {
-  gap: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  height: 100%;
-  width: 80%;
-  color: var(--black);
-  a {
-    text-transform: uppercase;
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    font-weight: 700;
-    text-decoration: none;
-    color: var(--black);
-    &:hover {
-      color: var(--yellow);
-    }
+@media (min-width: 992px) {
+  .padded-navbar {
+      padding-left: 30px;
+      padding-right: 30px;
   }
 }
-.ncol2 {
-  height: 100%;
-  width: 20%;
-  img {
-    height: 100%;
-  }
-}
-
-/* Drop Down Section  */
-.dropdown {
-  height: 100%;
-  display: flex;
-}
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  margin-top: 100px;
-}
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-.dropdown-menu {
-  border-radius: 0;
-}
-/* Nav Bar End  */
+ .navbar-nav{
+  font-weight: 650;
+ }
+/* Nav Bar Start*/
 
 .carousel-inner img {
   height: 500px;
@@ -148,6 +98,10 @@ a {
 
 /* About Section Start  */
 .about {
+  background-image: url('https://img.freepik.com/free-photo/minimalist-blue-white-wave-background_1017-46756.jpg?t=st=1729675322~exp=1729678922~hmac=3108a87232c2171940f1659078c7c13c21124ca135d955a70a1ea466ae267b48&w=996');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
   gap: 30px;
   padding: 70px 0;
   align-items: center;
@@ -157,11 +111,12 @@ a {
   height: auto;
   width: 100%;
 
-  h5 {
-    font-weight: 800;
+  >h6 {
+    font-weight: 700;
     border-bottom: 1px solid var(--yellow);
     text-transform: uppercase;
     border-radius: 5px;
+    font-size: 20px;
   }
   h2 {
     font-weight: 800;
@@ -186,7 +141,6 @@ a {
 }
 .about-col2 {
   height: 500px;
-  border: 2px solid #0e2431;
   width: 45%;
   overflow: hidden;
   border-top-left-radius: 50px;
@@ -196,6 +150,34 @@ a {
   img {
     width: 100%;
   }
+}
+
+.feature-card {
+  gap: 10px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+.feature-card i {
+  font-size: 2rem;
+  color: var(--red);
+}
+
+.feature-card p {
+  font-weight: 700;
+  font-size: 1rem;
 }
 /* About Section End  */
 
@@ -211,7 +193,7 @@ a {
   justify-content: center;
   background-color: var(--black);
   color: var(--white);
-  h5 {
+  h6 {
     border-bottom: 1px solid var(--yellow);
     text-transform: uppercase;
     border-radius: 5px;
@@ -263,6 +245,13 @@ a {
 .achievement-content {
   position: relative;
   z-index: 2;
+  i{
+      font-size: 40px;
+      padding-bottom: 20px;
+  }
+  h3{
+    font-size: 50px;
+  }
 }
 /* Statistics Section End  */
 
@@ -283,6 +272,9 @@ a {
     text-align: center;
     font-weight: 800;
   }
+  a{
+    color: var(--black);
+  }
 }
 .card-img-top {
   height: 200px !important;
@@ -296,8 +288,19 @@ a {
   word-wrap: break-word;
 }
 .card-body {
-  height: 200px;
+  height: fit-content;
   overflow: hidden;
+  .btn {
+    background-color: #0e2431;
+    color: white;
+    border: none; 
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color:#042233;
+    color:var(--white);
+}
 }
 /* Project Section End  */
 
@@ -313,9 +316,9 @@ a {
   align-items: center;
   gap: 10px;
 
-  h5 {
+  h6 {
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
     border-bottom: 1px solid var(--yellow);
     border-radius: 5px;
   }
@@ -352,6 +355,7 @@ a {
     transform: scale(1.05);
     cursor: pointer;
 
+    /* Show the full content on hover */
     .area-card-overlay {
       background-color: rgba(14, 36, 49, 0.7);
     }
@@ -360,8 +364,14 @@ a {
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* Hide the bottom area name on hover */
+    .default-area-name {
+      opacity: 0;
+    }
   }
 
+  /* Background images for each card */
   &.area-card-1 {
     background-image: url("https://img.freepik.com/premium-photo/fintech-real-estate-investment_1167636-6008.jpg?w=740");
   }
@@ -416,8 +426,19 @@ a {
       margin: 5px 0 0;
     }
   }
-}
 
+  /* Default area name displayed at the bottom */
+  .default-area-name {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+  }
+}
 /* Area Section End  */
 
 /* Client Section Start  */
@@ -430,7 +451,7 @@ a {
   height: auto;
   width: 100%;
   padding: 50px;
-  h5 {
+  h6 {
     text-transform: uppercase;
     font-weight: 800;
     border-bottom: 1px solid var(--yellow);
@@ -450,79 +471,39 @@ a {
 }
 /* Client Section End  */
 
+  
 /* Why Choose Us Section Start  */
-.wcs {
-  position: relative;
-  width: 100%;
-  height: 650px;
-  background-image: url("https://img.freepik.com/premium-photo/modern-interior-design-with-bold-geometric-pattern-set-against-deep-sapphire-blue-backdrop_941611-4598.jpg?w=900");
+.wcs{
+  background-image: url('https://img.freepik.com/premium-photo/white-abstract-background-texture-design-pattern-element-product-display-with-banner-background_655634-42.jpg?w=900');
+  height: auto;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.overlay {
-  padding: 50px 40px;
+  background-position: center ce;
+  width: 100%;
   display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(14, 36, 49, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  color: white;
-  text-align: center;
-
-  .flex-box {
-    gap: 10px;
-    display: flex;
-    height: 100%;
-    width: 100%;
-
-    .fbox1 {
-      height: 100%;
-      width: 40%;
-      .img1 {
-        position: absolute;
-        height: 450px;
-        width: 350px;
-        left: 50px;
-        border-radius: 10px;
-      }
-      .img2 {
-        position: absolute;
-        height: 250px;
-        width: 300px;
-        left: 230px;
-        top: 320px;
-        border-radius: 10px;
-      }
-    }
-    .fbox2 {
-      padding: 20px 0;
-      gap: 10px;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      width: 60%;
-    }
+  align-items: center;
+  padding: 50px 0;
+  .sub-h{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-bottom: 1px solid var(--yellow);
+    border-radius: 5px;
   }
 }
-
-.accordion-button {
-  background-color: transparent;
-  color: #000;
-}
-
-.accordion-button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-
-  .accordion-body {
-    background-color: rgba(255, 0, 0, 0);
+section {
+  background-color: #fff;
+  .sub-title{
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-bottom: 1px solid var(--yellow);
+    border-radius: 5px;
+  }
+  i{
+    font-size: 20px;
+    color: var(--red);
   }
 }
 /* Why Choose Us Section End  */
@@ -532,8 +513,8 @@ footer {
   color: var(--white);
   display: flex;
   height: auto;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 15px;
   width: 100%;
   padding: 40px;
   background-color: var(--black);
@@ -545,8 +526,8 @@ footer {
     height: 270px;
     width: 33%;
     img {
-      height: 80px;
-      width: 60%;
+      height: 60px;
+      width:180px;
     }
     .icons {
       height: 40px;
@@ -578,7 +559,7 @@ footer {
     flex-direction: column;
     gap: 10px;
     height: 270px;
-    width: 33%;
+    width: 20%;
     a {
       width: fit-content;
       display: flex;
@@ -595,7 +576,7 @@ footer {
     display: flex;
     flex-direction: column;
     height: 270px;
-    width: 33%;
+    width: 43%;
     a {
       display: flex;
       gap: 10px;
@@ -641,7 +622,7 @@ footer {
   transform: translateY(-50%);
   background-color: var(--red);
   color: var(--white);
-  z-index: 9999;
+  z-index: 9;
   cursor: pointer;
   height: 150px;
   width: 40px;
@@ -663,13 +644,13 @@ footer {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: var(--red);
   color: var(--white);
-  z-index: 9999;
+  z-index: 9;
   cursor: pointer;
   height: 150px;
   width: 50px;
-  a {
+  gap: 10px;
+  a img {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -713,69 +694,3 @@ footer {
 }
 /* Master Button End  */
 
-.mobile-nav {
-  display: none; 
-}
-
-.mobile-nav.active {
-  display: flex; 
-  flex-direction: column; 
-}
-
-.mobile-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: var(--white); 
-}
-
-.mobile-logo {
-  height: 40px; 
-}
-
-.mobile-menu-toggle {
-  background: none;
-  border: none;
-  color: var(--black); 
-  font-size: 24px; 
-  cursor: pointer;
-}
-
-.mobile-menu {
-  color: var(--black);
-  display: none; 
-  flex-direction: column;
-  background-color: var(--white); 
-  padding: 10px;
-}
-
-.mobile-menu.active {
-  display: flex; 
-}
-
-.mobile-menu a {
-  color: var(--black);
-  text-decoration: none;
-  padding: 10px;
-  transition: background 0.3s;
-}
-
-.mobile-menu a:hover {
-  color: var(--white);
-  background: var(--black);
-}
-
-.dropdown-menu {
-  display: none;
-  flex-direction: column; 
-  padding: 0; 
-}
-
-.dropdown-menu.active {
-  display: flex; 
-}
-
-.dropdown-menu a {
-  padding: 10px; 
-}

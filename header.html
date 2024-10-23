@@ -39,60 +39,58 @@
     <!-- Top Nav End -->
 
     <!--  Nav Section Start     -->
-    <div class="nav">
-        <div class="ncol1">
-            <a href="index.html"  >Home</a>
-            <a href="about.html"    >About Us</a>
-            <div class="dropdown">
-                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Services
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"  >Property Management</a></li>
-                    <li><a class="dropdown-item" href="#"  >Real Estate Brokerage</a></li>
-                    <li><a class="dropdown-item" href="#"  >Real Estate Investment Consulting</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light padded-navbar">
+        <div class="container-fluid">
+            <!-- Brand/Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/lo-lg.jpeg" alt="Logo" height="60">
+            </a>
+    
+            <!-- Toggler button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT US</a>
+                    </li>
+                    <!-- Dropdown Menu for Services -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#">RESIDENTIAL PROPERTIES</a></li>
+                            <li><a class="dropdown-item" href="#">COMMERCIAL PROPERTIES</a></li>
+                            <li><a class="dropdown-item" href="#">OFFICES</a></li>
+                            <li><a class="dropdown-item" href="#">PLOTS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Clients.html">CLIENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">TESTIMONIAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">CONTACT US</a>
+                    </li>
                 </ul>
             </div>
-            <!-- <a href="#"  >Projects</a> -->
-            <a href="blog.html"  >Blog</a>
-            <a href="Clients.html"  >Clients</a>
-            <a href="testimonials.html"  >Testimonials</a>
-            <a href="contact-us.html"  >Contact Us</a>
-            <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#enquiryModal"
-                class="btn btn-color text-white">Inquiry</button> -->
         </div>
-        <div class="ncol2">
-            <img src="images/logo.jpg" alt="Logo" srcset="">
-        </div>
-    </div>
+    </nav>
+    
     <!-- Nav Section  End-->
 
-    <!-- Mobile Navigation Start -->
-    <div class="mobile-nav">
-        <div class="mobile-header">
-            <img src="images/logo.jpg" alt="Logo" class="mobile-logo">
-            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
-        </div>
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="index.html" class="active-h">Home</a>
-            <a href="about.html">About Us</a>
-            <div class="dropdown">
-                <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">Services</a>
-                <ul class="dropdown-menu" id="servicesDropdown">
-                    <li><a class="dropdown-item" href="#">Property Management</a></li>
-                    <li><a class="dropdown-item" href="#">Real Estate Brokerage</a></li>
-                    <li><a class="dropdown-item" href="#">Real Estate Investment Consulting</a></li>
-                </ul>
-            </div>
-            <!-- <a href="">Projects</a> -->
-            <a href="blog.html">Blog</a>
-            <a href="Clients.html">Clients</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="contact-us.html">Contact Us</a>
-        </div>
-    </div>
-    <!-- Mobile Navigation End -->
 
 
  <!-- Js Files & libs  -->
