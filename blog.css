@@ -26,12 +26,14 @@ body {
     border: none !important;
 }
 /* Blog Section   */
-.blog-container {
+.blog-container{
   height: auto;
   width: 100%;
-  padding: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 10px ;
 }
-
 .card {
   height: 450px; /* Fixed height for cards */
   display: flex;
