@@ -354,8 +354,6 @@ a {
   &:hover {
     transform: scale(1.05);
     cursor: pointer;
-
-    /* Show the full content on hover */
     .area-card-overlay {
       background-color: rgba(14, 36, 49, 0.7);
     }
@@ -364,14 +362,10 @@ a {
       opacity: 1;
       transform: translateY(0);
     }
-
-    /* Hide the bottom area name on hover */
     .default-area-name {
       opacity: 0;
     }
   }
-
-  /* Background images for each card */
   &.area-card-1 {
     background-image: url("https://img.freepik.com/premium-photo/fintech-real-estate-investment_1167636-6008.jpg?w=740");
   }
@@ -426,8 +420,6 @@ a {
       margin: 5px 0 0;
     }
   }
-
-  /* Default area name displayed at the bottom */
   .default-area-name {
     position: absolute;
     bottom: 10px;
@@ -479,11 +471,11 @@ a {
   
 /* Why Choose Us Section Start  */
 .wcs{
-  background-image: url('https://img.freepik.com/premium-photo/white-abstract-background-texture-design-pattern-element-product-display-with-banner-background_655634-42.jpg?w=900');
+  background-image: url('https://digicoders.in/public/assets/images/bg/home-infotechno-contact-bg.jpg');
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center ce;
+  background-position: center center;
   width: 100%;
   display: flex;
   flex-direction: column;

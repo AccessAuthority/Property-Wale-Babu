@@ -76,3 +76,35 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// Review API 
+const placeId = 'ChIJNfuPQdzDkzkRDaq0hV9igH0'; // Your Place ID
+const apiKey = 'AIzaSyBg_83D-D6Z7vZ3wNQoxqxWMiOV6-cpyjU'; // Your API Key
+
+fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&key=${apiKey}`)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json();
+    })
+    .then(data => {
+        const reviewsContainer = document.getElementById('reviews');
+        const reviews = data.result && data.result.reviews; // Ensure result exists
+        reviewsContainer.innerHTML = ''; // Clear any existing content
+
+        if (reviews) {
+            reviews.forEach(review => {
+                const reviewDiv = document.createElement('div');
+                reviewDiv.classList.add('review'); // Optional: Add a class for styling
+                reviewDiv.innerHTML = `
+                    <p><strong>${review.author_name}</strong></p>
+                    <p>${review.text}</p>
+                    <p>Rating: ${review.rating}</p>
+                `;
+                reviewsContainer.appendChild(reviewDiv); // Add each review to the container
+            });
+        } else {
+            reviewsContainer.innerHTML = 'No reviews found.';
+        }
+    })
+    .catch(error => console.error('Error fetching reviews:', error));
