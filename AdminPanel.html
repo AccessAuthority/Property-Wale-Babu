@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="AdminPanel.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Real Estate Admin Dashboard</h1>
+            <div class="admin-profile">
+                <p>Welcome, Admin</p>
+                <button>Logout</button>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#enquiries">Enquiries</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#property-management">Property Management</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="dashboard">
+                <h2>Dashboard Overview</h2>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>Total Listed Properties</h3>
+                        <p id="total-properties">150</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Total Blogs</h3>
+                        <p id="total-blogs">25</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Total Enquiries</h3>
+                        <p id="total-enquiries">75</p>
+                    </div>
+                </div>
+                <canvas id="propertyChart"></canvas>
+            </section>
+            <section id="enquiries">
+                <h2>Enquiries</h2>
+                <!-- Enquiries management table can go here -->
+            </section>
+            <section id="blog">
+                <h2>Blog Management</h2>
+                <!-- Blog management table can go here -->
+            </section>
+            <section id="property-management">
+                <h2>Property Management</h2>
+                <canvas id="categoryChart"></canvas>
+                <!-- Property listing table can go here -->
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

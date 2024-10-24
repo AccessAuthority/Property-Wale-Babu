@@ -672,7 +672,7 @@ footer {
   right: 0;
   top: 95%;
   transform: translateY(-50%);
-  background-color: var(--red);
+  background-color: var(--black);
   color: var(--white);
   z-index: 9999;
   cursor: pointer;
