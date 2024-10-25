@@ -22,199 +22,198 @@ body {
   --white: #fff;
 }
 .crumb {
-    color: var(--white);
-    background:url('https://img.freepik.com/premium-photo/minimalist-house-illustration-minimalist-3d-illustration-white-house-against-blue-background_1288054-4963.jpg?w=900');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  color: var(--white);
+  background: url("https://img.freepik.com/premium-photo/minimalist-house-illustration-minimalist-3d-illustration-white-house-against-blue-background_1288054-4963.jpg?w=900");
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 /* Make sure content is above the background and gradient */
 .crumb .content {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 /* Our Mission  */
 .our-mission {
-    margin-top: 50px;
-    text-align: center;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .our-mission h2 {
-    font-weight: bold;
-    color: var(--black);
+  font-weight: bold;
+  color: var(--black);
 }
 
 .about-us {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .about-us h5 {
-    color:var(--black);
+  color: var(--black);
 }
 
 .working-experience {
-    position: relative;
+  position: relative;
 }
 
 .working-experience img {
-    max-width: 100%;
-    border-radius: 8px;
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 .experience-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2rem;
-    text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .experience-text span {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 .experience-text small {
-    display: block;
+  display: block;
 }
 
 .list-bullets li {
-    list-style: none;
+  list-style: none;
 }
 
 .list-bullets li::before {
-    content: '■';
-    color:var(--black);
-    margin-right: 10px;
+  content: "■";
+  color: var(--black);
+  margin-right: 10px;
 }
 
 /* What We Do  */
 .what-we-do {
-    margin: 50px 0;
-    text-align: center;
+  margin: 50px 0;
+  text-align: center;
 }
 
 .what-we-do h2 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .what-we-do h2 span {
-    color:var(--black);
+  color: var(--black);
 }
 
 .card-custom {
-    background-color: #fff;
-    border: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 30px;
-    display: flex;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
 }
 
 .card-custom .icon {
-    background-color: var(--black);
-    color: #fff;
-    padding: 15px;
-    font-size: 2rem;
-    border-radius: 5px 0 0 5px;
-    margin-right: 15px;
+  background-color: var(--black);
+  color: #fff;
+  padding: 15px;
+  font-size: 2rem;
+  border-radius: 5px 0 0 5px;
+  margin-right: 15px;
 }
 
 .card-custom .card-body {
-    padding: 0;
+  padding: 0;
 }
 
 .card-custom .card-body h5 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .card-custom .card-body p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .card-custom .card-body a {
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
 .card-custom .card-body a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Values Section  */
 .values-section {
-    text-align: center;
-    padding: 50px 0;
+  text-align: center;
+  padding: 50px 0;
 }
 
 .values-section h2 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .values-section h2 span {
-    color:var(--black);
+  color: var(--black);
 }
 
 .value-box {
-    background-color:var(--black);
-    padding: 30px;
-    border: 1px solid #333;
-    transition: transform 0.3s ease;
-    margin-bottom: 30px;
+  background-color: var(--black);
+  padding: 30px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
 }
 
 .value-box:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .value-box i {
-    font-size: 3rem;
-    color: white;
-    margin-bottom: 15px;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 15px;
 }
 
 .value-box h5 {
-    font-weight: bold;
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-    color: white;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .value-box p {
-    color: #bbb;
+  color: #bbb;
 }
 
 .value-box hr {
-    width: 50px;
-    height: 2px;
-    margin: 15px auto;
-    background-color: red;
+  width: 50px;
+  height: 2px;
+  margin: 15px auto;
+  background-color: red;
 }
 
+/* Background styling for the section */
+.contact-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
 
-    /* Background styling for the section */
-    .contact-section {
-        background-color: #f8f9fa;
-        padding: 50px 0;
-    }
+/* Image styling */
+.contact-img {
+  background-image: url("https://img.freepik.com/free-photo/side-view-people-working-as-real-estate-agents_23-2151064803.jpg?t=st=1729496583~exp=1729500183~hmac=5430f568d1437f58a1a37810ffcefbd2c96675a3b5d18fa079782e178e411ad8&w=740");
+  background-size: cover;
+  background-position: center;
+  min-height: 550px;
+  border-radius: 10px;
+}
 
-    /* Image styling */
-    .contact-img {
-        background-image: url('https://img.freepik.com/free-photo/side-view-people-working-as-real-estate-agents_23-2151064803.jpg?t=st=1729496583~exp=1729500183~hmac=5430f568d1437f58a1a37810ffcefbd2c96675a3b5d18fa079782e178e411ad8&w=740');
-        background-size: cover;
-        background-position: center;
-        min-height: 550px;
-        border-radius: 10px;
-    }
-
-    /* Form container padding */
-    .form-container {
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    }
+/* Form container padding */
+.form-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}

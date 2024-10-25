@@ -82,13 +82,13 @@ a {
 
 @media (min-width: 992px) {
   .padded-navbar {
-      padding-left: 30px;
-      padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
- .navbar-nav{
+.navbar-nav {
   font-weight: 650;
- }
+}
 /* Nav Bar Start*/
 
 .carousel-inner img {
@@ -98,7 +98,7 @@ a {
 
 /* About Section Start  */
 .about {
-  background-image: url('https://img.freepik.com/free-photo/minimalist-blue-white-wave-background_1017-46756.jpg?t=st=1729675322~exp=1729678922~hmac=3108a87232c2171940f1659078c7c13c21124ca135d955a70a1ea466ae267b48&w=996');
+  background-image: url("https://img.freepik.com/free-photo/minimalist-blue-white-wave-background_1017-46756.jpg?t=st=1729675322~exp=1729678922~hmac=3108a87232c2171940f1659078c7c13c21124ca135d955a70a1ea466ae267b48&w=996");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -111,7 +111,7 @@ a {
   height: auto;
   width: 100%;
 
-  >h6 {
+  > h6 {
     font-weight: 700;
     border-bottom: 1px solid var(--yellow);
     text-transform: uppercase;
@@ -245,11 +245,11 @@ a {
 .achievement-content {
   position: relative;
   z-index: 2;
-  i{
-      font-size: 40px;
-      padding-bottom: 20px;
+  i {
+    font-size: 40px;
+    padding-bottom: 20px;
   }
-  h3{
+  h3 {
     font-size: 50px;
   }
 }
@@ -272,7 +272,7 @@ a {
     text-align: center;
     font-weight: 800;
   }
-  a{
+  a {
     color: var(--black);
   }
 }
@@ -293,14 +293,14 @@ a {
   .btn {
     background-color: #0e2431;
     color: white;
-    border: none; 
-}
+    border: none;
+  }
 
-/* Hover effect for buttons */
-.btn:hover {
-    background-color:#042233;
-    color:var(--white);
-}
+  /* Hover effect for buttons */
+  .btn:hover {
+    background-color: #042233;
+    color: var(--white);
+  }
 }
 /* Project Section End  */
 
@@ -468,10 +468,9 @@ a {
 }
 /* Client Section End  */
 
-  
 /* Why Choose Us Section Start  */
-.wcs{
-  background-image: url('https://digicoders.in/public/assets/images/bg/home-infotechno-contact-bg.jpg');
+.wcs {
+  background-image: url("https://digicoders.in/public/assets/images/bg/home-infotechno-contact-bg.jpg");
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -481,7 +480,7 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 50px 0;
-  .sub-h{
+  .sub-h {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 800;
@@ -491,14 +490,14 @@ a {
 }
 section {
   background-color: #fff;
-  .sub-title{
+  .sub-title {
     width: fit-content;
     text-transform: uppercase;
     font-weight: 800;
     border-bottom: 1px solid var(--yellow);
     border-radius: 5px;
   }
-  i{
+  i {
     font-size: 20px;
     color: var(--red);
   }
@@ -516,10 +515,10 @@ section {
 
 .testimonial:hover {
   background-color: #0e2431;
-  color:white;
-  transform: scale(1.05); 
- p {
-      color: white;
+  color: white;
+  transform: scale(1.05);
+  p {
+    color: white;
   }
 }
 
@@ -541,14 +540,13 @@ section {
 
 @media (max-width: 768px) {
   .testimonial {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 }
-.star-rating >  i{
+.star-rating > i {
   color: #fde06f;
 }
 /* Testimonials Section  */
-
 
 /* Footer Section Start  */
 footer {
@@ -569,7 +567,7 @@ footer {
     width: 33%;
     img {
       height: 60px;
-      width:180px;
+      width: 180px;
     }
     .icons {
       height: 40px;
@@ -737,4 +735,3 @@ footer {
   }
 }
 /* Master Button End  */
-

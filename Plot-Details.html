@@ -26,106 +26,115 @@
     <title>Plot Details</title>
 
     <style>
-      body{
-        background-color: #ecedee !important;
-      }
-         .latest-properties   a{
-                color: #0e2431;
-             }
-         h5{
-  white-space: nowrap; 
-  overflow: hidden;     
-  text-overflow: ellipsis; 
-}
-.mb-0{
-  width: 200px;
-  white-space: nowrap; 
-  overflow: hidden;     
-  text-overflow: ellipsis !important; 
-}
-.list-unstyled{
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.span{
-  color: white;
-  height: 40px;
-  width: 100%;
-  background-color: #0e2431;
-  display: flex;
-  p{
-    border-right: 1px solid white;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    line-height: 40px;
-  }
-  .no-border{
-    border-right:none;
-  }
-}
-.bg{
-  background-color:white;
-  width: auto;
-  height: fit-content;
-  padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-.additional{
-  height: auto;
-  width: 100%;
-}
+        body {
+            background-color: #ecedee !important;
+        }
 
-.whatsapp-section {
-    background-color: #0e2431;
-    padding: 50px 0;
-    position: relative;
-}
+        .latest-properties a {
+            color: #0e2431;
+        }
 
-.whatsapp-section h2 {
-    color: white;
-    margin-bottom: 20px;
-    font-size: 32px;
-}
+        h5 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
 
-.btn-whatsapp {
-    font-size: 20px;
-    padding: 10px 20px;
-    margin-bottom: 50px;
-}
+        .mb-0 {
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis !important;
+        }
 
-.phone-image {
-    position: relative;
-    max-width: 500px;
-    margin: 0 auto;
-}
+        .list-unstyled {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
 
-.phone-image img {
-    width: 100%;
-    display: block;
-    margin-top: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
+        .span {
+            color: white;
+            height: 40px;
+            width: 100%;
+            background-color: #0e2431;
+            display: flex;
 
-@media (max-width: 768px) {
-    .whatsapp-section h2 {
-        font-size: 28px;
-    }
+            p {
+                border-right: 1px solid white;
+                text-align: center;
+                height: 100%;
+                width: 100%;
+                line-height: 40px;
+            }
 
-    .btn-whatsapp {
-        font-size: 18px;
-    }
+            .no-border {
+                border-right: none;
+            }
+        }
 
-    .phone-image {
-        max-width: 300px;
-    }
-}
-.btn{
-  background-color: aliceblue !important;
-}
+        .bg {
+            background-color: white;
+            width: auto;
+            height: fit-content;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
 
+        .additional {
+            height: auto;
+            width: 100%;
+        }
+
+        .whatsapp-section {
+            background-color: #0e2431;
+            padding: 50px 0;
+            position: relative;
+        }
+
+        .whatsapp-section h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .btn-whatsapp {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-bottom: 50px;
+        }
+
+        .phone-image {
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .phone-image img {
+            width: 100%;
+            display: block;
+            margin-top: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-section h2 {
+                font-size: 28px;
+            }
+
+            .btn-whatsapp {
+                font-size: 18px;
+            }
+
+            .phone-image {
+                max-width: 300px;
+            }
+        }
+
+        .btn {
+            background-color: aliceblue !important;
+        }
     </style>
 </head>
 
@@ -134,181 +143,192 @@
     <!-- Placeholder for header -->
     <div id="header"></div>
 
-        <!-- Main Content  -->
-        <div class="container mt-4">
-            <div class="row">
-                <!-- Left Column (Main Property Section) -->
-                <div class="col-lg-8">
-                    <!-- Property Image Carousel -->
-                    <div id="propertyCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://img.freepik.com/premium-photo/contemporary-residential-buildings-with-balconies-gardens_979520-118091.jpg?w=740" class="d-block w-100" alt="Property Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://img.freepik.com/premium-photo/exterior-view-university-hong-kong-hong-kong_979520-62348.jpg?w=740" class="d-block w-100" alt="Property Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://img.freepik.com/premium-photo/interior-modern-living-room-with-blue-sofa-plants-3d-render_979520-55326.jpg?w=900" class="d-block w-100" alt="Property Image">
-                            </div>
+    <!-- Main Content  -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Left Column (Main Property Section) -->
+            <div class="col-lg-8">
+                <!-- Property Image Carousel -->
+                <div id="propertyCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://img.freepik.com/premium-photo/contemporary-residential-buildings-with-balconies-gardens_979520-118091.jpg?w=740"
+                                class="d-block w-100" alt="Property Image">
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#propertyCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#propertyCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-    
-                    <!-- Property Title and Details -->
-                    <div class="span">
-                        <p><i class="fa-solid fa-chart-area"></i> 0.75 acres</p>
-                        <p><i class="fa-solid fa-person-shelter"></i> Residential Plot</p>
-                        <p class="no-border"><i class="fa-solid fa-landmark"></i>Zoning: R1</p>
-                    </div>
-                    <div class="bg mt-3">
-                        <div class="property-title">
-                            <h2>Prime Residential Plot in Green Valley</h2>
+                        <div class="carousel-item">
+                            <img src="https://img.freepik.com/premium-photo/exterior-view-university-hong-kong-hong-kong_979520-62348.jpg?w=740"
+                                class="d-block w-100" alt="Property Image">
                         </div>
-                        <div class="property-meta text-muted">
-                            <p><i class="fa-solid fa-location-dot"></i> 456 Oak Avenue, Green Valley, CA 95616</p>
-                        </div>
-    
-                        <!-- Property Description -->
-                        <div class="description-section">
-                            <h5>Description</h5>
-                            <p>
-                                Beautifully located 0.75-acre residential plot surrounded by nature. Ideal for building your dream home with easy access to amenities and parks.
-                            </p>
+                        <div class="carousel-item">
+                            <img src="https://img.freepik.com/premium-photo/interior-modern-living-room-with-blue-sofa-plants-3d-render_979520-55326.jpg?w=900"
+                                class="d-block w-100" alt="Property Image">
                         </div>
                     </div>
-                    <div class="additional bg mt-3">
-                        <div class="container">
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th colspan="2">Property Overview</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Property Type:</td>
-                                            <td>Residential Plot</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Address:</td>
-                                            <td>456 Oak Avenue, Green Valley, CA 95616</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-    
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th colspan="2">Basic Details</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Square Footage:</td>
-                                            <td>32,670 sq ft</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Lot Size:</td>
-                                            <td>0.75 acres</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Zoning:</td>
-                                            <td>R1 (Residential)</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th colspan="2">Contact Information</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Agent:</td>
-                                            <td>John Smith, (987) 654-3210</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Email:</td>
-                                            <td>john.smith@greenvalleyrealty.com</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#propertyCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#propertyCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Property Title and Details -->
+                <div class="span">
+                    <p><i class="fa-solid fa-chart-area"></i> 0.75 acres</p>
+                    <p><i class="fa-solid fa-person-shelter"></i> Residential Plot</p>
+                    <p class="no-border"><i class="fa-solid fa-landmark"></i>Zoning: R1</p>
+                </div>
+                <div class="bg mt-3">
+                    <div class="property-title">
+                        <h2>Prime Residential Plot in Green Valley</h2>
                     </div>
-    
-                    <div class="map bg mt-3">
-                        <h5>Property Map</h5>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.485591514946!2d81.01640987443766!3d26.824503363877497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be30e0922c0a9%3A0x5e7d614eae7b109f!2sShalimar%20One%20World%20Vista!5e0!3m2!1sen!2sin!4v1729764597536!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="property-meta text-muted">
+                        <p><i class="fa-solid fa-location-dot"></i> 456 Oak Avenue, Green Valley, CA 95616</p>
+                    </div>
+
+                    <!-- Property Description -->
+                    <div class="description-section">
+                        <h5>Description</h5>
+                        <p>
+                            Beautifully located 0.75-acre residential plot surrounded by nature. Ideal for building your
+                            dream home with easy access to amenities and parks.
+                        </p>
                     </div>
                 </div>
-    
-                <!-- Right Column (Sidebar) -->
-                <div class="col-lg-4">
-                    <!-- Latest Properties -->
-                    <div class="latest-properties">
-                        <h5 class="bg">Latest Properties</h5>
-                        <div class="d-flex flex-column bg">
-                            <a href="" class="d-flex mb-3">
-                                <img src="https://img.freepik.com/premium-photo/modern-luxury-apartment-building-with-modern-architectural-design_1092965-3567.jpg?w=740" class="me-3" alt="Property" width="100px" height="50px">
-                                <div>
-                                    <p class="mb-0">Sunny Acres</p>
-                                    <p class="text-muted small">3 BHK, Residential</p>
-                                </div>
-                            </a>
-                            <div class="d-flex mb-3">
-                                <img src="https://img.freepik.com/premium-photo/modern-luxury-apartment-building-with-modern-architectural-design_1092965-3559.jpg?w=740" class="me-3" alt="Property" width="100px" height="50px">
-                                <div>
-                                    <p class="mb-0">Greenfield Estates</p>
-                                    <p class="text-muted small">4 BHK, Residential</p>
-                                </div>
-                            </div>
-                            <!-- Add more properties in similar structure -->
-                        </div>
-                        <div class="whatsapp-section text-center mt-3">
-                            <div class="container">
-                                <h2>Connect to us on WhatsApp</h2>
-                                <a href="https://wa.me/+919876543210" target="_blank" class="btn btn-whatsapp">
-                                  <i class="fa-brands fa-whatsapp"></i> Click to Message
-                                </a>
-                                <div class="phone-image">
-                                    <img src="images/app copy.png" alt="Phone Image" class="img-fluid">
-                                </div>
-                            </div>
+                <div class="additional bg mt-3">
+                    <div class="container">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Property Overview</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Property Type:</td>
+                                        <td>Residential Plot</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address:</td>
+                                        <td>456 Oak Avenue, Green Valley, CA 95616</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Basic Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Square Footage:</td>
+                                        <td>32,670 sq ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lot Size:</td>
+                                        <td>0.75 acres</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zoning:</td>
+                                        <td>R1 (Residential)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Contact Information</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Agent:</td>
+                                        <td>John Smith, (987) 654-3210</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email:</td>
+                                        <td>john.smith@greenvalleyrealty.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
+                </div>
+
+                <div class="map bg mt-3">
+                    <h5>Property Map</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.485591514946!2d81.01640987443766!3d26.824503363877497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be30e0922c0a9%3A0x5e7d614eae7b109f!2sShalimar%20One%20World%20Vista!5e0!3m2!1sen!2sin!4v1729764597536!5m2!1sen!2sin"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-    
-            <!-- Similar Listings -->
-            <div class="similar-listings mt-5">
-                <h5>Similar Listings</h5>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="https://img.freepik.com/premium-photo/luxury-modern-house-with-modern-architectural-design_1092965-3414.jpg?w=740" class="card-img-top" alt="Property 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Maplewood Estates</h5>
-                                <p class="card-text">Residential Plot, 1 acre</p>
+
+            <!-- Right Column (Sidebar) -->
+            <div class="col-lg-4">
+                <!-- Latest Properties -->
+                <div class="latest-properties">
+                    <h5 class="bg">Latest Properties</h5>
+                    <div class="d-flex flex-column bg">
+                        <a href="" class="d-flex mb-3">
+                            <img src="https://img.freepik.com/premium-photo/modern-luxury-apartment-building-with-modern-architectural-design_1092965-3567.jpg?w=740"
+                                class="me-3" alt="Property" width="100px" height="50px">
+                            <div>
+                                <p class="mb-0">Sunny Acres</p>
+                                <p class="text-muted small">3 BHK, Residential</p>
+                            </div>
+                        </a>
+                        <div class="d-flex mb-3">
+                            <img src="https://img.freepik.com/premium-photo/modern-luxury-apartment-building-with-modern-architectural-design_1092965-3559.jpg?w=740"
+                                class="me-3" alt="Property" width="100px" height="50px">
+                            <div>
+                                <p class="mb-0">Greenfield Estates</p>
+                                <p class="text-muted small">4 BHK, Residential</p>
+                            </div>
+                        </div>
+                        <!-- Add more properties in similar structure -->
+                    </div>
+                    <div class="whatsapp-section text-center mt-3">
+                        <div class="container">
+                            <h2>Connect to us on WhatsApp</h2>
+                            <a href="https://wa.me/+919876543210" target="_blank" class="btn btn-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Click to Message
+                            </a>
+                            <div class="phone-image">
+                                <img src="images/app copy.png" alt="Phone Image" class="img-fluid">
                             </div>
                         </div>
                     </div>
-                    <!-- Add more similar listing cards as needed -->
                 </div>
             </div>
         </div>
-    
-        <!-- Main Content End  -->
+
+        <!-- Similar Listings -->
+        <div class="similar-listings mt-5">
+            <h5>Similar Listings</h5>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://img.freepik.com/premium-photo/luxury-modern-house-with-modern-architectural-design_1092965-3414.jpg?w=740"
+                            class="card-img-top" alt="Property 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Maplewood Estates</h5>
+                            <p class="card-text">Residential Plot, 1 acre</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more similar listing cards as needed -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content End  -->
 
     <!-- Placeholder for footer -->
     <div id="footer"></div>
