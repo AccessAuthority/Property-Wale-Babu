@@ -17,34 +17,60 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-            <!-- Stylesheets -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="hover.css">
     <link rel="stylesheet" href="about-us.css">
     <link rel="stylesheet" href="blog.css">
 
     <style>
-        .gallery-img {
-            width: 100%; /* Full width */
-            height: 210px; /* Set height to 210px */
-            object-fit: cover; /* Maintain aspect ratio */
-            padding: 5px; /* Padding between images */
-            transition: transform 0.3s;
+        body{
+            color: aliceblue;
+        }
+        .images {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            .img {
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+                /* border: 1px solid #0e2431; */
+                height: fit-content;
+                width: fit-content;
+                transition: transform 0.3s;
+
+                img {
+                    height: 200px;
+                    width: 200px;
+                }
+            }
         }
 
-        .gallery-img:hover {
-            transform: scale(1.05); /* Scale effect on hover */
+
+        .img:hover {
+            transform: scale(1.05);
+            /* Scale effect on hover */
         }
 
         @media (min-width: 768px) {
             .gallery-img {
-                height: 210px; /* Fixed height for larger screens */
+                height: 210px;
+                /* Fixed height for larger screens */
             }
         }
 
         @media (max-width: 767.98px) {
             .gallery-img {
-                height: 210px; /* Fixed height for smaller screens */
+                height: 210px;
+                /* Fixed height for smaller screens */
             }
         }
     </style>
@@ -71,26 +97,51 @@
         </div>
     </div>
 
-    <div class="container my-3">
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="https://prominencegroup.in/img/clients/1.jpg" class="img-fluid gallery-img" alt="Image 1">
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="https://prominencegroup.in/img/clients/1.jpg" class="img-fluid gallery-img" alt="Image 2">
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="https://prominencegroup.in/img/clients/11.jpg" class="img-fluid gallery-img" alt="Image 3">
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="https://prominencegroup.in/img/clients/4.jpg" class="img-fluid gallery-img" alt="Image 4">
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="https://prominencegroup.in/img/clients/5.jpg" class="img-fluid gallery-img" alt="Image 5">
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <img src="https://prominencegroup.in/img/clients/5.jpg" class="img-fluid gallery-img" alt="Image 6">
-            </div>
+    <div class="images">
+        <div class="img">
+            <img src="images/2.png" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/3.png" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/4.png" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/5.png" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/6.png" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/7.png" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/8.png" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/9.png" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/10.png" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/11.png" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/12.png" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/13.png" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/14.png" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/15.png" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/16.png" alt="" srcset="">
         </div>
     </div>
 
